@@ -1,0 +1,11 @@
+framework module InsuranceCardScan {
+  umbrella header "InsuranceCardScan.h"
+
+  export *
+  module * { export * }
+}
+
+module InsuranceCardScan.Swift {
+    header "InsuranceCardScan-Swift.h"
+    requires objc
+}

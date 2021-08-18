@@ -1,0 +1,333 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target arm64-apple-ios14.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name InsuranceCardScan
+import AVFoundation
+import Foundation
+@_exported import InsuranceCardScan
+import Swift
+import UIKit
+import VideoToolbox
+import Vision
+@objc @_inheritsConvenienceInitializers @IBDesignable open class LoadingButton : UIKit.UIButton {
+  public var isLoading: Swift.Bool
+  public var shadowAdded: Swift.Bool
+  open var indicator: UIKit.UIView & InsuranceCardScan.IndicatorProtocol
+  @objc @IBInspectable open var withShadow: Swift.Bool
+  @objc @IBInspectable open var cornerRadius: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var bgColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  open var shadowLayer: UIKit.UIView?
+  open var entireViewGroup: [UIKit.UIView] {
+    get
+  }
+  @available(iOS 13.0, *)
+  public enum ButtonStyle {
+    case fill
+    case outline
+    public static func == (a: InsuranceCardScan.LoadingButton.ButtonStyle, b: InsuranceCardScan.LoadingButton.ButtonStyle) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  public init(frame: CoreGraphics.CGRect = .zero, icon: UIKit.UIImage? = nil, text: Swift.String? = nil, textColor: UIKit.UIColor? = .white, font: UIKit.UIFont? = nil, bgColor: UIKit.UIColor = .black, cornerRadius: CoreGraphics.CGFloat = 12.0, withShadow: Swift.Bool = false)
+  @available(iOS 13.0, tvOS 13.0, *)
+  convenience public init(icon: UIKit.UIImage? = nil, text: Swift.String? = nil, font: UIKit.UIFont? = nil, cornerRadius: CoreGraphics.CGFloat = 12.0, withShadow: Swift.Bool = false, buttonStyle: InsuranceCardScan.LoadingButton.ButtonStyle)
+  @objc override dynamic open func draw(_ rect: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  open func showLoader(userInteraction: Swift.Bool, _ completion: InsuranceCardScan.LBCallback = nil)
+  open func showLoaderWithImage(userInteraction: Swift.Bool = false)
+  open func showLoader(_ viewsToBeHidden: [UIKit.UIView?], userInteraction: Swift.Bool = false, _ completion: InsuranceCardScan.LBCallback = nil)
+  open func hideLoader(_ completion: InsuranceCardScan.LBCallback = nil)
+  public func fillContent()
+  @objc override dynamic open func layoutSubviews()
+  @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc override dynamic open func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc override dynamic open func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc override dynamic open func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc deinit
+}
+extension UIActivityIndicatorView : InsuranceCardScan.IndicatorProtocol {
+  public var radius: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  public var color: UIKit.UIColor {
+    get
+    set
+  }
+  public func setupAnimation(in layer: QuartzCore.CALayer, size: CoreGraphics.CGSize)
+}
+public typealias JSONCompletionBlock = ((Swift.Result<[Swift.String : Swift.AnyObject], InsuranceCardScan.CardScanError>) -> Swift.Void)
+public enum CardScanError : Swift.Error {
+  case invalidAPIKey
+  case invalidArguments
+  case invalidJSONResponse
+  case invalidCardResponse
+  case XMLParseError
+  case authenticationError
+  case monitorCardTimeout
+  case accessDenied(_: Swift.String?)
+  case wrappedError(_: Swift.Error?)
+  case unknownError(_: Swift.String?)
+}
+public enum CardScanResult<Success, Error> {
+  case success(Success)
+  case failure(Error)
+  case canceled
+}
+public class CardScanAPIClient {
+  public init(userToken: Swift.String, live: Swift.Bool = true)
+  public func uploadCardImage(image: UIKit.UIImage, completed: @escaping (Swift.Result<Foundation.UUID, InsuranceCardScan.CardScanError>) -> Swift.Void)
+  public func cancelSubscription()
+  public func subscribeToCard(cardUUID: Foundation.UUID, completed: @escaping (Swift.Result<InsuranceCardScan.Card, InsuranceCardScan.CardScanError>) -> Swift.Void)
+  public func getCard(cardUUID: Foundation.UUID, completed: @escaping (Swift.Result<InsuranceCardScan.Card, InsuranceCardScan.CardScanError>) -> Swift.Void)
+  public func getCardImage(cardUUID: Foundation.UUID, completed: @escaping (Swift.Result<[Swift.String : Swift.AnyObject], InsuranceCardScan.CardScanError>) -> Swift.Void)
+  public func listCards(limit: Swift.Int? = nil, cursor: Swift.String? = nil, completed: @escaping (Swift.Result<[Swift.String : Swift.AnyObject], InsuranceCardScan.CardScanError>) -> Swift.Void)
+  @objc deinit
+}
+public enum CardState : Swift.String {
+  case pending
+  case processing
+  case completed
+  case error
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Card {
+  public var cardId: Foundation.UUID?
+  public var state: InsuranceCardScan.CardState
+  public var memberNumber: Swift.String? {
+    get
+  }
+  public var groupNumber: Swift.String? {
+    get
+  }
+  public var payerName: Swift.String? {
+    get
+  }
+  public var rxBin: Swift.String? {
+    get
+  }
+  public var rxPCN: Swift.String? {
+    get
+  }
+  public var rxGroup: Swift.String? {
+    get
+  }
+  public var memberName: Swift.String? {
+    get
+  }
+  public var dependentNames: [Swift.String]? {
+    get
+  }
+  public var planName: Swift.String? {
+    get
+  }
+  public var planId: Swift.String? {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers open class LineScaleIndicator : InsuranceCardScan.LBIndicator {
+  override open func setupAnimation(in layer: QuartzCore.CALayer, size: CoreGraphics.CGSize)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum ScanStatus {
+  case none
+  case processing
+  case analyzing
+  case success
+  case cameraAuthError
+  case error
+  case retry
+  public static func == (a: InsuranceCardScan.ScanStatus, b: InsuranceCardScan.ScanStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public typealias CardScanResultResponse = ((InsuranceCardScan.CardScanResult<InsuranceCardScan.Card, InsuranceCardScan.CardScanError>) -> Swift.Void)
+@objc @available(iOS 13, *)
+open class CardScannerViewController : UIKit.UIViewController {
+  public var titleLabelText: Swift.String
+  public var subTitleLabelText: Swift.String
+  public var retryButtonText: Swift.String
+  public var labelTextColor: UIKit.UIColor
+  public init(userToken: Swift.String, live: Swift.Bool)
+  @available(*, unavailable)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic open func viewDidLoad()
+  @objc override dynamic open var shouldAutorotate: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic open var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  public func present(from: UIKit.UIViewController, animated: Swift.Bool, completion: @escaping InsuranceCardScan.CardScanResultResponse)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class BallPulseSyncIndicator : InsuranceCardScan.LBIndicator {
+  override open func setupAnimation(in layer: QuartzCore.CALayer, size: CoreGraphics.CGSize)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class LineSpinFadeLoader : InsuranceCardScan.LBIndicator {
+  override open func setupAnimation(in layer: QuartzCore.CALayer, size: CoreGraphics.CGSize)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class BallSpinFadeIndicator : InsuranceCardScan.LBIndicator {
+  override open func setupAnimation(in layer: QuartzCore.CALayer, size: CoreGraphics.CGSize)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable open class CardScanButton : InsuranceCardScan.LoadingButton {
+  public enum IndicatorType : Swift.String {
+    case sysDefault
+    case material
+    case ballPulseSync
+    case ballSpinFade
+    case ballPulse
+    case lineScalePulse
+    case lineScale
+    case ballBeat
+    case lineSpin
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  override public init(frame: CoreGraphics.CGRect = .zero, icon: UIKit.UIImage? = nil, text: Swift.String? = nil, textColor: UIKit.UIColor? = .white, font: UIKit.UIFont? = nil, bgColor: UIKit.UIColor = .black, cornerRadius: CoreGraphics.CGFloat = 12.0, withShadow: Swift.Bool = false)
+  convenience public init(text: Swift.String = "Scan Your Card", withIcon: Swift.Bool? = true, indicatorType: InsuranceCardScan.CardScanButton.IndicatorType = .ballSpinFade, textColor: UIKit.UIColor? = .white, bgColor: UIKit.UIColor? = nil)
+  @objc override dynamic open func layoutSubviews()
+  public func showLoaderAboveImage(userInteraction: Swift.Bool = false)
+  override open func hideLoader(_ completion: InsuranceCardScan.LBCallback = nil)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class LBIndicator : UIKit.UIView, InsuranceCardScan.IndicatorProtocol {
+  open var isAnimating: Swift.Bool
+  open var radius: CoreGraphics.CGFloat
+  open var color: UIKit.UIColor
+  convenience public init(radius: CoreGraphics.CGFloat = 18.0, color: UIKit.UIColor = .gray)
+  open func startAnimating()
+  open func stopAnimating()
+  open func setupAnimation(in layer: QuartzCore.CALayer, size: CoreGraphics.CGSize)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol IndicatorProtocol {
+  var radius: CoreGraphics.CGFloat { get set }
+  var color: UIKit.UIColor { get set }
+  var isAnimating: Swift.Bool { get }
+  func startAnimating()
+  func stopAnimating()
+  func setupAnimation(in layer: QuartzCore.CALayer, size: CoreGraphics.CGSize)
+}
+public struct CardScannerError : Foundation.LocalizedError {
+  public enum Step {
+    case cameraSetup, photoProcessing, authorizationDenied, capture
+    public static func == (a: InsuranceCardScan.CardScannerError.Step, b: InsuranceCardScan.CardScannerError.Step) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var step: InsuranceCardScan.CardScannerError.Step
+  public var underlyingError: Swift.Error?
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public typealias LBCallback = (() -> Swift.Void)?
+extension UIColor {
+  public func RGBtoCMYK(red: CoreGraphics.CGFloat, green: CoreGraphics.CGFloat, blue: CoreGraphics.CGFloat) -> (cyan: CoreGraphics.CGFloat, magenta: CoreGraphics.CGFloat, yellow: CoreGraphics.CGFloat, key: CoreGraphics.CGFloat)
+  public func CMYKtoRGB(cyan: CoreGraphics.CGFloat, magenta: CoreGraphics.CGFloat, yellow: CoreGraphics.CGFloat, key: CoreGraphics.CGFloat) -> (red: CoreGraphics.CGFloat, green: CoreGraphics.CGFloat, blue: CoreGraphics.CGFloat)
+  public func getColorTint() -> UIKit.UIColor
+}
+extension UIButton {
+  open func setImage(_ image: UIKit.UIImage?)
+  open func setTitle(_ text: Swift.String?)
+}
+extension UIImage {
+  convenience public init?(_ color: UIKit.UIColor, size: CoreGraphics.CGSize = CGSize(width: 1, height: 1))
+}
+extension UIView {
+  open func setCornerBorder(color: UIKit.UIColor? = nil, cornerRadius: CoreGraphics.CGFloat = 15.0, borderWidth: CoreGraphics.CGFloat = 1.5)
+  open func setAsShadow(bounds: CoreGraphics.CGRect, cornerRadius: CoreGraphics.CGFloat = 0.0, shadowRadius: CoreGraphics.CGFloat = 1)
+  public func addSubViews(_ views: [UIKit.UIView])
+  public func centerSubView(_ view: UIKit.UIView)
+}
+@objc @_inheritsConvenienceInitializers open class BallBeatIndicator : InsuranceCardScan.LBIndicator {
+  override open func setupAnimation(in layer: QuartzCore.CALayer, size: CoreGraphics.CGSize)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class MaterialLoadingIndicator : InsuranceCardScan.LBIndicator {
+  override open var color: UIKit.UIColor {
+    get
+    set
+  }
+  @objc @IBInspectable open var lineWidth: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic open var bounds: CoreGraphics.CGRect {
+    @objc get
+    @objc set
+  }
+  convenience public init(radius: CoreGraphics.CGFloat = 18.0, color: UIKit.UIColor = .gray)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic open func layoutSubviews()
+  override open func startAnimating()
+  override open func stopAnimating()
+  override open func setupAnimation(in layer: QuartzCore.CALayer, size: CoreGraphics.CGSize)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class LineScalePulseIndicator : InsuranceCardScan.LBIndicator {
+  override open func setupAnimation(in layer: QuartzCore.CALayer, size: CoreGraphics.CGSize)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class BallPulseIndicator : InsuranceCardScan.LBIndicator {
+  override open func setupAnimation(in layer: QuartzCore.CALayer, size: CoreGraphics.CGSize)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@available(iOS 13.0, *)
+extension InsuranceCardScan.LoadingButton.ButtonStyle : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension InsuranceCardScan.LoadingButton.ButtonStyle : Swift.Hashable {}
+extension InsuranceCardScan.CardState : Swift.Equatable {}
+extension InsuranceCardScan.CardState : Swift.Hashable {}
+extension InsuranceCardScan.CardState : Swift.RawRepresentable {}
+extension InsuranceCardScan.ScanStatus : Swift.Equatable {}
+extension InsuranceCardScan.ScanStatus : Swift.Hashable {}
+extension InsuranceCardScan.CardScanButton.IndicatorType : Swift.Equatable {}
+extension InsuranceCardScan.CardScanButton.IndicatorType : Swift.Hashable {}
+extension InsuranceCardScan.CardScanButton.IndicatorType : Swift.RawRepresentable {}
+extension InsuranceCardScan.CardScannerError.Step : Swift.Equatable {}
+extension InsuranceCardScan.CardScannerError.Step : Swift.Hashable {}
