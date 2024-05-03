@@ -91,6 +91,9 @@ CardScanConfig(
   onRetry: onRetry,
   onProgress: onProgress,
 
+// Camera Options
+  cameraOptions: cameraOptions,
+
   // UI Customization
   messages: messages,
   messageStyle: messagesStyle,
