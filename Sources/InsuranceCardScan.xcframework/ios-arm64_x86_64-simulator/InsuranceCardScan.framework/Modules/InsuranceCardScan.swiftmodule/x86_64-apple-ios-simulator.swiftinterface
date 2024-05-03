@@ -108,13 +108,156 @@ extension InsuranceCardScan.CardScanViewController : WebKit.WKScriptMessageHandl
   @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
 }
 public struct EligibilityRequest : Swift.Codable {
+  public var provider: InsuranceCardScan.ProviderDto
+  public var subscriber: InsuranceCardScan.SubscriberDto
+  public init(provider: InsuranceCardScan.ProviderDto, subscriber: InsuranceCardScan.SubscriberDto)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@_hasMissingDesignatedInitializers public class Eligibility : Swift.Codable {
-  @objc deinit
+public struct ProviderDto : Swift.Codable {
+  public var firstName: Swift.String
+  public var lastName: Swift.String
+  public var npi: Swift.String
+  public init(firstName: Swift.String, lastName: Swift.String, npi: Swift.String)
   public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SubscriberDto : Swift.Codable {
+  public var firstName: Swift.String
+  public var lastName: Swift.String
+  public var dateOfBirth: Swift.String
+  public init(firstName: Swift.String, lastName: Swift.String, dateOfBirth: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct EligibilityApiRequest : Swift.Codable {
+  public var controlNumber: Swift.String?
+  public var tradingPartnerServiceId: Swift.String?
+  public var provider: InsuranceCardScan.ProviderDto?
+  public var subscriber: InsuranceCardScan.ShortSubscriberDto?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct EligibilityApiResponse : Swift.Codable {
+  public var eligibilityId: Swift.String
+  public var state: Swift.String
+  public var cardId: Swift.String
+  public var createdAt: Swift.String
+  public var updateAt: Swift.String
+  public var eligibilityRequest: InsuranceCardScan.EligibilityApiRequest?
+  public var eligibilitySummarizedResponse: InsuranceCardScan.EligibilitySummarizedResponse?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ShortSubscriberDto : Swift.Codable {
+  public var firstName: Swift.String
+  public var lastName: Swift.String
+  public var memberId: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PayerDetails : Swift.Codable {
+  public var payerName: Swift.String?
+  public var address: InsuranceCardScan.Address?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Address : Swift.Codable {
+  public var address1: Swift.String?
+  public var address2: Swift.String?
+  public var city: Swift.String?
+  public var state: Swift.String?
+  public var postalCode: Swift.String?
+  public var countryCode: Swift.String?
+  public var locationIdentifier: Swift.String?
+  public var countrySubDivisionCode: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PlanDetails : Swift.Codable {
+  public var planNumber: Swift.String?
+  public var groupName: Swift.String?
+  public var groupNumber: Swift.String?
+  public var planStartDate: Swift.String?
+  public var planEligibilityStartDate: Swift.String?
+  public var planName: Swift.String?
+  public var planActive: Swift.Bool?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Service : Swift.Codable {
+  public var coInsuranceInNetwork: InsuranceCardScan.CoInsurance?
+  public var coPaymentInNetwork: InsuranceCardScan.CoPayment?
+  public var serviceCode: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CoInsurance : Swift.Codable {
+  public var amount: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CoPayment : Swift.Codable {
+  public var amount: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CoverageSummary : Swift.Codable {
+  public var individualDeductibleInNetwork: InsuranceCardScan.Deductible?
+  public var individualOOPInNetwork: InsuranceCardScan.OOP?
+  public var familyDeductibleInNetwork: InsuranceCardScan.Deductible?
+  public var familyOOPInNetwork: InsuranceCardScan.OOP?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Deductible : Swift.Codable {
+  public var totalAmount: Swift.String?
+  public var remainingAmount: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct OOP : Swift.Codable {
+  public var totalAmount: Swift.String?
+  public var remainingAmount: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct EligibilitySummarizedResponse : Swift.Codable {
+  public var eligibilityRequestId: Swift.String?
+  public var subscriberDetails: InsuranceCardScan.SubscriberDetails?
+  public var payerDetails: InsuranceCardScan.PayerDetails?
+  public var planDetails: InsuranceCardScan.PlanDetails?
+  public var coverageSummary: InsuranceCardScan.CoverageSummary?
+  public var chiropractic: InsuranceCardScan.Service?
+  public var emergencyRoom: InsuranceCardScan.Service?
+  public var officeVisit: InsuranceCardScan.Service?
+  public var urgentCare: InsuranceCardScan.Service?
+  public var hospitalOutpatient: InsuranceCardScan.Service?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SubscriberDetails : Swift.Codable {
+  public var memberId: Swift.String?
+  public var firstName: Swift.String?
+  public var lastName: Swift.String?
+  public var middleName: Swift.String?
+  public var gender: Swift.String?
+  public var address: InsuranceCardScan.Address?
+  public var dob: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Eligibility : Swift.Codable {
+  public var eligibilityId: Swift.String
+  public var state: Swift.String
+  public var cardId: Swift.String
+  public var createdAt: Swift.String
+  public var updateAt: Swift.String
+  public var eligibilityRequest: InsuranceCardScan.EligibilityApiRequest?
+  public var eligibilitySummarizedResponse: InsuranceCardScan.EligibilitySummarizedResponse?
+  public init(from response: InsuranceCardScan.EligibilityApiResponse)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct CardScanError : Swift.Codable, Swift.Error {
   public func encode(to encoder: any Swift.Encoder) throws
