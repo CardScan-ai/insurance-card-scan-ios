@@ -66,7 +66,7 @@ public struct InsuranceCard : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct CardScanConfig {
-  public init(sessionToken: Swift.String, live: Swift.Bool, onSuccess: @escaping (InsuranceCardScan.InsuranceCard) -> Swift.Void, eligibility: InsuranceCardScan.EligibilityRequest? = nil, messages: [Swift.String : Swift.String]? = nil, messageStyle: InsuranceCardScan.MessageStyle? = nil, autoSwitchActiveColor: UIKit.UIColor? = nil, autoSwitchInactiveColor: UIKit.UIColor? = nil, progressBarColor: UIKit.UIColor? = nil, widgetBackgroundColor: UIKit.UIColor? = nil, onCancel: (() -> Swift.Void)? = nil, onError: ((InsuranceCardScan.CardScanError) -> Swift.Void)? = nil, onProgress: ((Swift.Double) -> Swift.Void)? = nil, onEligibilitySuccess: ((InsuranceCardScan.Eligibility) -> Swift.Void)? = nil, onEligibilityError: ((InsuranceCardScan.CardScanError) -> Swift.Void)? = nil, backsideSupport: Swift.Bool? = nil, onRetry: (() -> Swift.Void)? = nil, logging: InsuranceCardScan.LogLevel? = nil)
+  public init(sessionToken: Swift.String, live: Swift.Bool, onSuccess: @escaping (InsuranceCardScan.InsuranceCard) -> Swift.Void, eligibility: InsuranceCardScan.EligibilityRequest? = nil, messages: [Swift.String : Swift.String]? = nil, messageStyle: InsuranceCardScan.MessageStyle? = nil, autoSwitchActiveColor: UIKit.UIColor? = nil, autoSwitchInactiveColor: UIKit.UIColor? = nil, progressBarColor: UIKit.UIColor? = nil, widgetBackgroundColor: UIKit.UIColor? = nil, onCancel: (() -> Swift.Void)? = nil, onError: ((InsuranceCardScan.CardScanError) -> Swift.Void)? = nil, onProgress: ((Swift.Double) -> Swift.Void)? = nil, onEligibilitySuccess: ((InsuranceCardScan.Eligibility) -> Swift.Void)? = nil, onEligibilityError: ((InsuranceCardScan.CardScanError) -> Swift.Void)? = nil, backsideSupport: Swift.Bool? = nil, onRetry: (() -> Swift.Void)? = nil, cameraOptions: InsuranceCardScan.CameraOptions? = nil, logging: InsuranceCardScan.LogLevel? = nil)
 }
 public enum LogLevel : Swift.String, Swift.Codable {
   case off, normal, verbose, detector, everything
@@ -79,6 +79,19 @@ public enum LogLevel : Swift.String, Swift.Codable {
 public let messageKeys: Swift.Set<Swift.String>
 public struct MessageStyle {
   public init(fontSize: Swift.Double, textColor: UIKit.UIColor, backgroundColor: UIKit.UIColor)
+}
+public enum CameraPosition {
+  case front
+  case back
+  case unspecified
+  public static func == (a: InsuranceCardScan.CameraPosition, b: InsuranceCardScan.CameraPosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct CameraOptions {
+  public init(flipHorizontal: Swift.Bool? = false, flipVertical: Swift.Bool? = false)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CardScanViewController : UIKit.UIViewController, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
   @_Concurrency.MainActor(unsafe) public var config: InsuranceCardScan.CardScanConfig?
@@ -113,3 +126,5 @@ extension InsuranceCardScan.CardState : Swift.RawRepresentable {}
 extension InsuranceCardScan.LogLevel : Swift.Equatable {}
 extension InsuranceCardScan.LogLevel : Swift.Hashable {}
 extension InsuranceCardScan.LogLevel : Swift.RawRepresentable {}
+extension InsuranceCardScan.CameraPosition : Swift.Equatable {}
+extension InsuranceCardScan.CameraPosition : Swift.Hashable {}

@@ -1338,7 +1338,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(sessionToken:live:onSuccess:eligibility:messages:messageStyle:autoSwitchActiveColor:autoSwitchInactiveColor:progressBarColor:widgetBackgroundColor:onCancel:onError:onProgress:onEligibilitySuccess:onEligibilityError:backsideSupport:onRetry:logging:)",
+            "printedName": "init(sessionToken:live:onSuccess:eligibility:messages:messageStyle:autoSwitchActiveColor:autoSwitchInactiveColor:progressBarColor:widgetBackgroundColor:onCancel:onError:onProgress:onEligibilitySuccess:onEligibilityError:backsideSupport:onRetry:cameraOptions:logging:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1673,6 +1673,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "InsuranceCardScan.CameraOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraOptions",
+                    "printedName": "InsuranceCardScan.CameraOptions",
+                    "usr": "s:17InsuranceCardScan13CameraOptionsV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "InsuranceCardScan.LogLevel?",
                 "children": [
                   {
@@ -1687,8 +1702,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:17InsuranceCardScan0bC6ConfigV12sessionToken4live9onSuccess11eligibility8messages12messageStyle21autoSwitchActiveColor0no8InactiveQ0011progressBarQ0016widgetBackgroundQ00H6Cancel0H5Error0H8Progress0h11EligibilityI00hzX015backsideSupport0H5Retry7loggingACSS_SbyAA0aB0VcAA0Z7RequestVSgSDyS2SGSgAA07MessageM0VSgSo7UIColorCSgA6_A6_A6_yycSgyAA0bcX0VcSgySdcSgyAA0Z0CcSgA10_SbSgA7_AA8LogLevelOSgtcfc",
-            "mangledName": "$s17InsuranceCardScan0bC6ConfigV12sessionToken4live9onSuccess11eligibility8messages12messageStyle21autoSwitchActiveColor0no8InactiveQ0011progressBarQ0016widgetBackgroundQ00H6Cancel0H5Error0H8Progress0h11EligibilityI00hzX015backsideSupport0H5Retry7loggingACSS_SbyAA0aB0VcAA0Z7RequestVSgSDyS2SGSgAA07MessageM0VSgSo7UIColorCSgA6_A6_A6_yycSgyAA0bcX0VcSgySdcSgyAA0Z0CcSgA10_SbSgA7_AA8LogLevelOSgtcfc",
+            "usr": "s:17InsuranceCardScan0bC6ConfigV12sessionToken4live9onSuccess11eligibility8messages12messageStyle21autoSwitchActiveColor0no8InactiveQ0011progressBarQ0016widgetBackgroundQ00H6Cancel0H5Error0H8Progress0h11EligibilityI00hzX015backsideSupport0H5Retry13cameraOptions7loggingACSS_SbyAA0aB0VcAA0Z7RequestVSgSDyS2SGSgAA07MessageM0VSgSo7UIColorCSgA7_A7_A7_yycSgyAA0bcX0VcSgySdcSgyAA0Z0CcSgA11_SbSgA8_AA13CameraOptionsVSgAA8LogLevelOSgtcfc",
+            "mangledName": "$s17InsuranceCardScan0bC6ConfigV12sessionToken4live9onSuccess11eligibility8messages12messageStyle21autoSwitchActiveColor0no8InactiveQ0011progressBarQ0016widgetBackgroundQ00H6Cancel0H5Error0H8Progress0h11EligibilityI00hzX015backsideSupport0H5Retry13cameraOptions7loggingACSS_SbyAA0aB0VcAA0Z7RequestVSgSDyS2SGSgAA07MessageM0VSgSo7UIColorCSgA7_A7_A7_yycSgyAA0bcX0VcSgySdcSgyAA0Z0CcSgA11_SbSgA8_AA13CameraOptionsVSgAA8LogLevelOSgtcfc",
             "moduleName": "InsuranceCardScan",
             "declAttributes": [
               "AccessControl"
@@ -1701,8 +1716,7 @@
         "mangledName": "$s17InsuranceCardScan0bC6ConfigV",
         "moduleName": "InsuranceCardScan",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ]
       },
       {
@@ -2138,6 +2152,308 @@
         "declKind": "Struct",
         "usr": "s:17InsuranceCardScan12MessageStyleV",
         "mangledName": "$s17InsuranceCardScan12MessageStyleV",
+        "moduleName": "InsuranceCardScan",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraPosition",
+        "printedName": "CameraPosition",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "front",
+            "printedName": "front",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(InsuranceCardScan.CameraPosition.Type) -> InsuranceCardScan.CameraPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraPosition",
+                    "printedName": "InsuranceCardScan.CameraPosition",
+                    "usr": "s:17InsuranceCardScan14CameraPositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "InsuranceCardScan.CameraPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraPosition",
+                        "printedName": "InsuranceCardScan.CameraPosition",
+                        "usr": "s:17InsuranceCardScan14CameraPositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17InsuranceCardScan14CameraPositionO5frontyA2CmF",
+            "mangledName": "$s17InsuranceCardScan14CameraPositionO5frontyA2CmF",
+            "moduleName": "InsuranceCardScan"
+          },
+          {
+            "kind": "Var",
+            "name": "back",
+            "printedName": "back",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(InsuranceCardScan.CameraPosition.Type) -> InsuranceCardScan.CameraPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraPosition",
+                    "printedName": "InsuranceCardScan.CameraPosition",
+                    "usr": "s:17InsuranceCardScan14CameraPositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "InsuranceCardScan.CameraPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraPosition",
+                        "printedName": "InsuranceCardScan.CameraPosition",
+                        "usr": "s:17InsuranceCardScan14CameraPositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17InsuranceCardScan14CameraPositionO4backyA2CmF",
+            "mangledName": "$s17InsuranceCardScan14CameraPositionO4backyA2CmF",
+            "moduleName": "InsuranceCardScan"
+          },
+          {
+            "kind": "Var",
+            "name": "unspecified",
+            "printedName": "unspecified",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(InsuranceCardScan.CameraPosition.Type) -> InsuranceCardScan.CameraPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraPosition",
+                    "printedName": "InsuranceCardScan.CameraPosition",
+                    "usr": "s:17InsuranceCardScan14CameraPositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "InsuranceCardScan.CameraPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraPosition",
+                        "printedName": "InsuranceCardScan.CameraPosition",
+                        "usr": "s:17InsuranceCardScan14CameraPositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17InsuranceCardScan14CameraPositionO11unspecifiedyA2CmF",
+            "mangledName": "$s17InsuranceCardScan14CameraPositionO11unspecifiedyA2CmF",
+            "moduleName": "InsuranceCardScan"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CameraPosition",
+                "printedName": "InsuranceCardScan.CameraPosition",
+                "usr": "s:17InsuranceCardScan14CameraPositionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CameraPosition",
+                "printedName": "InsuranceCardScan.CameraPosition",
+                "usr": "s:17InsuranceCardScan14CameraPositionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17InsuranceCardScan14CameraPositionO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17InsuranceCardScan14CameraPositionO2eeoiySbAC_ACtFZ",
+            "moduleName": "InsuranceCardScan",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan14CameraPositionO9hashValueSivp",
+            "mangledName": "$s17InsuranceCardScan14CameraPositionO9hashValueSivp",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan14CameraPositionO9hashValueSivg",
+                "mangledName": "$s17InsuranceCardScan14CameraPositionO9hashValueSivg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17InsuranceCardScan14CameraPositionO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s17InsuranceCardScan14CameraPositionO4hash4intoys6HasherVz_tF",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17InsuranceCardScan14CameraPositionO",
+        "mangledName": "$s17InsuranceCardScan14CameraPositionO",
+        "moduleName": "InsuranceCardScan",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraOptions",
+        "printedName": "CameraOptions",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(flipHorizontal:flipVertical:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraOptions",
+                "printedName": "InsuranceCardScan.CameraOptions",
+                "usr": "s:17InsuranceCardScan13CameraOptionsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17InsuranceCardScan13CameraOptionsV14flipHorizontal0F8VerticalACSbSg_AFtcfc",
+            "mangledName": "$s17InsuranceCardScan13CameraOptionsV14flipHorizontal0F8VerticalACSbSg_AFtcfc",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17InsuranceCardScan13CameraOptionsV",
+        "mangledName": "$s17InsuranceCardScan13CameraOptionsV",
         "moduleName": "InsuranceCardScan",
         "declAttributes": [
           "AccessControl"
@@ -2970,23 +3286,37 @@
     {
       "filePath": "\/Users\/nickls\/dev\/cardscan\/swift-package-source\/InsuranceCardScan\/CardScanConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1050,
+      "offset": 1076,
       "length": 7,
       "value": "\"swift\""
     },
     {
       "filePath": "\/Users\/nickls\/dev\/cardscan\/swift-package-source\/InsuranceCardScan\/CardScanConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5138,
+      "offset": 5717,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nickls\/dev\/cardscan\/swift-package-source\/InsuranceCardScan\/CardScanConfig.swift",
       "kind": "Array",
-      "offset": 5798,
+      "offset": 6377,
       "length": 217,
       "value": "[\"manualCaptureTitle\", \"frontsideCompletedTitle\", \"autoCaptureTitle\", \"processingTitle\", \"completedTitle\", \"errorTitle\", \"retryTitle\", \"cameraErrorTitle\", \"eligibilityProcessing\"]"
+    },
+    {
+      "filePath": "\/Users\/nickls\/dev\/cardscan\/swift-package-source\/InsuranceCardScan\/CardScanConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7136,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/nickls\/dev\/cardscan\/swift-package-source\/InsuranceCardScan\/CardScanConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7165,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/nickls\/dev\/cardscan\/swift-package-source\/InsuranceCardScan\/CardScannerViewController.swift",

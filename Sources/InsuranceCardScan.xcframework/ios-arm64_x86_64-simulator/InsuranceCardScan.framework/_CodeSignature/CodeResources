@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		IrBc9IcJN/aCovmgJs3ka9VscUw=
+		5E8Q78rzEj44gX/pFFbeR2ddbns=
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		wkyqib/fH4KgRjrP+SjKCbF03G0=
+		t+kqDEi6vf2+iqOnzUhQczqq9Ak=
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		wkyqib/fH4KgRjrP+SjKCbF03G0=
+		t+kqDEi6vf2+iqOnzUhQczqq9Ak=
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2bCwAgrotTMxjGjHG5oNHLE+QiI=
+		6H5nKf9+Y4pYdnZHkHEOBTbOCiU=
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		IrBc9IcJN/aCovmgJs3ka9VscUw=
+		5E8Q78rzEj44gX/pFFbeR2ddbns=
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		xV2XV86EdoPqeDYE+ZlsFJ+wcZ8=
+		kKxS6H7IWMIXxDDkc8uJT993pyI=
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xV2XV86EdoPqeDYE+ZlsFJ+wcZ8=
+		kKxS6H7IWMIXxDDkc8uJT993pyI=
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8ukqR77De87hi25JDmnpHYcBwOA=
+		LmugFQoQwrcC/BzvW0SB1O+KNo4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>asset-manifest.json</key>
 		<data>
-		rmwDPt5ThnUplNjQq3em8TCA1ho=
+		gTyMi4Elr+sVqhlRgHp2iNaJlLI=
 		</data>
 		<key>favicon.ico</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>index.html</key>
 		<data>
-		gT+QeBsRdA5q9iyBMRz+FpXWFpM=
+		7OaVOPHBF2DtO7G9Y4zgg1Gbhow=
 		</data>
 		<key>logo192.png</key>
 		<data>
@@ -104,17 +104,17 @@
 		<data>
 		O9UljU9WD09W3BCfp0fMOipR9e0=
 		</data>
-		<key>static/js/main.544d7d94.js</key>
+		<key>static/js/main.55ae4073.js</key>
 		<data>
-		qoJr01JmA7kxZwx8HBeHnPawrrc=
+		Kb2gdCoVSoMVUpf8QAtNy+9PYSU=
 		</data>
-		<key>static/js/main.544d7d94.js.LICENSE.txt</key>
+		<key>static/js/main.55ae4073.js.LICENSE.txt</key>
 		<data>
 		xZGPpyUpW8qUggkOW58jMwJvoIk=
 		</data>
-		<key>static/js/main.544d7d94.js.map</key>
+		<key>static/js/main.55ae4073.js.map</key>
 		<data>
-		YkBEH/wTiEfuUCV11SOY3Vo8b2E=
+		Nu8ccTc3+mGDmfehVzaVIxSfGd8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LpuKKyoF4pWjMRfahU6FkWS3DBMGVDUS6AgPkKOEzZw=
+			RS/kVu4mem96XV23Ii//nGAsNe+F+Llnb2+QGE/jwms=
 			</data>
 		</dict>
 		<key>Modules/InsuranceCardScan.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OtQMeCeIngsHXi5Wci3m2Tpw+L984slaQ8hDvZA8WeE=
+			2J4wZXvZB+6dkgw1FUIC6NOXDtrhJxaXA/0Mdrrybnk=
 			</data>
 		</dict>
 		<key>Modules/InsuranceCardScan.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -158,28 +158,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OtQMeCeIngsHXi5Wci3m2Tpw+L984slaQ8hDvZA8WeE=
+			2J4wZXvZB+6dkgw1FUIC6NOXDtrhJxaXA/0Mdrrybnk=
 			</data>
 		</dict>
 		<key>Modules/InsuranceCardScan.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/M1m9BWB9jfobJRAsv9Y4qCLg2TWYMYYWK2n+afrOu0=
+			QZOjcVbltbih7p3AMH38vk5E6KhTrnUoxfU99eX6Ojw=
 			</data>
 		</dict>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LpuKKyoF4pWjMRfahU6FkWS3DBMGVDUS6AgPkKOEzZw=
+			RS/kVu4mem96XV23Ii//nGAsNe+F+Llnb2+QGE/jwms=
 			</data>
 		</dict>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			462dkItoQAnFcMjI0+JEnZrCQL6sEDnTCQVPG9kLyZI=
+			HuQYq0Y/k3AaZlXctN7eZ0RkbZ1NEfp5pT8NnxFA6HE=
 			</data>
 		</dict>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -193,14 +193,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			462dkItoQAnFcMjI0+JEnZrCQL6sEDnTCQVPG9kLyZI=
+			HuQYq0Y/k3AaZlXctN7eZ0RkbZ1NEfp5pT8NnxFA6HE=
 			</data>
 		</dict>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o14VQWBUqb5eWN/MvSUOwBAkxVauFaV1LsOUCoMpfXQ=
+			DzE/Z4gD90o31CnEu57RPGSpZaaeNXeGc8Epq2HMt/U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -214,7 +214,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RAo39OFjCqddwfVL+I5xqtalTSJr/5m3yvqVjqThN9g=
+			Ql6i4ZuodRE/kmKi1pUSA2ZCcF1Q8VnXDOht69K68VI=
 			</data>
 		</dict>
 		<key>favicon.ico</key>
@@ -228,7 +228,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			whh8kTKCc/voY4tYPR4f9fx1rlTWe3zYZRkVSIwY/SU=
+			Dp8i4D6qf/nQVe6+sQpnNWbVyg9+xljeNp+iOwJEtTg=
 			</data>
 		</dict>
 		<key>logo192.png</key>
@@ -287,25 +287,25 @@
 			x8bMFLBN1BGRhKZRwqjbQn9y5bBAeeNmBUuch/quC2c=
 			</data>
 		</dict>
-		<key>static/js/main.544d7d94.js</key>
+		<key>static/js/main.55ae4073.js</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HfrHmyQUiL2yrYSuB7YQUd3Y245ApAZLYJLpVYHYup4=
+			kZwk5W/a0sj/rY8OHTxbjU7AMR6UsIG2aCMcMJ8QKIo=
 			</data>
 		</dict>
-		<key>static/js/main.544d7d94.js.LICENSE.txt</key>
+		<key>static/js/main.55ae4073.js.LICENSE.txt</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			pqbLfHTI+JYMmrv9HWaQYkfQkl7BMxqbf1QwlkTxBqY=
 			</data>
 		</dict>
-		<key>static/js/main.544d7d94.js.map</key>
+		<key>static/js/main.55ae4073.js.map</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FA1ZSA3PIAQPHUoP+XKHZBI6+piTmqUGoST0/aaYp7E=
+			4I+86ip9QTJONATvRh6rUCtP34bsq1AS5KqhFiBcmCc=
 			</data>
 		</dict>
 	</dict>
