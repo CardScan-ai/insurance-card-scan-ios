@@ -92,6 +92,191 @@
           },
           {
             "kind": "Var",
+            "name": "frontside_processing",
+            "printedName": "frontside_processing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(InsuranceCardScan.CardState.Type) -> InsuranceCardScan.CardState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardState",
+                    "printedName": "InsuranceCardScan.CardState",
+                    "usr": "s:17InsuranceCardScan0B5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "InsuranceCardScan.CardState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardState",
+                        "printedName": "InsuranceCardScan.CardState",
+                        "usr": "s:17InsuranceCardScan0B5StateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17InsuranceCardScan0B5StateO20frontside_processingyA2CmF",
+            "mangledName": "$s17InsuranceCardScan0B5StateO20frontside_processingyA2CmF",
+            "moduleName": "InsuranceCardScan"
+          },
+          {
+            "kind": "Var",
+            "name": "frontside_failed",
+            "printedName": "frontside_failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(InsuranceCardScan.CardState.Type) -> InsuranceCardScan.CardState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardState",
+                    "printedName": "InsuranceCardScan.CardState",
+                    "usr": "s:17InsuranceCardScan0B5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "InsuranceCardScan.CardState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardState",
+                        "printedName": "InsuranceCardScan.CardState",
+                        "usr": "s:17InsuranceCardScan0B5StateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17InsuranceCardScan0B5StateO16frontside_failedyA2CmF",
+            "mangledName": "$s17InsuranceCardScan0B5StateO16frontside_failedyA2CmF",
+            "moduleName": "InsuranceCardScan"
+          },
+          {
+            "kind": "Var",
+            "name": "backside_processing",
+            "printedName": "backside_processing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(InsuranceCardScan.CardState.Type) -> InsuranceCardScan.CardState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardState",
+                    "printedName": "InsuranceCardScan.CardState",
+                    "usr": "s:17InsuranceCardScan0B5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "InsuranceCardScan.CardState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardState",
+                        "printedName": "InsuranceCardScan.CardState",
+                        "usr": "s:17InsuranceCardScan0B5StateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17InsuranceCardScan0B5StateO19backside_processingyA2CmF",
+            "mangledName": "$s17InsuranceCardScan0B5StateO19backside_processingyA2CmF",
+            "moduleName": "InsuranceCardScan"
+          },
+          {
+            "kind": "Var",
+            "name": "backside_failed",
+            "printedName": "backside_failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(InsuranceCardScan.CardState.Type) -> InsuranceCardScan.CardState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardState",
+                    "printedName": "InsuranceCardScan.CardState",
+                    "usr": "s:17InsuranceCardScan0B5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "InsuranceCardScan.CardState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardState",
+                        "printedName": "InsuranceCardScan.CardState",
+                        "usr": "s:17InsuranceCardScan0B5StateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17InsuranceCardScan0B5StateO15backside_failedyA2CmF",
+            "mangledName": "$s17InsuranceCardScan0B5StateO15backside_failedyA2CmF",
+            "moduleName": "InsuranceCardScan"
+          },
+          {
+            "kind": "Var",
+            "name": "post_processing",
+            "printedName": "post_processing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(InsuranceCardScan.CardState.Type) -> InsuranceCardScan.CardState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardState",
+                    "printedName": "InsuranceCardScan.CardState",
+                    "usr": "s:17InsuranceCardScan0B5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "InsuranceCardScan.CardState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardState",
+                        "printedName": "InsuranceCardScan.CardState",
+                        "usr": "s:17InsuranceCardScan0B5StateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17InsuranceCardScan0B5StateO15post_processingyA2CmF",
+            "mangledName": "$s17InsuranceCardScan0B5StateO15post_processingyA2CmF",
+            "moduleName": "InsuranceCardScan"
+          },
+          {
+            "kind": "Var",
             "name": "completed",
             "printedName": "completed",
             "children": [
@@ -550,6 +735,306 @@
           },
           {
             "kind": "Var",
+            "name": "details",
+            "printedName": "details",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.CardDetails?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetails",
+                    "printedName": "InsuranceCardScan.CardDetails",
+                    "usr": "s:17InsuranceCardScan0B7DetailsV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0aB0V7detailsAA0B7DetailsVSgvp",
+            "mangledName": "$s17InsuranceCardScan0aB0V7detailsAA0B7DetailsVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.CardDetails?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetails",
+                        "printedName": "InsuranceCardScan.CardDetails",
+                        "usr": "s:17InsuranceCardScan0B7DetailsV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0aB0V7detailsAA0B7DetailsVSgvg",
+                "mangledName": "$s17InsuranceCardScan0aB0V7detailsAA0B7DetailsVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "payer_match",
+            "printedName": "payer_match",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.PayerMatch?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayerMatch",
+                    "printedName": "InsuranceCardScan.PayerMatch",
+                    "usr": "s:17InsuranceCardScan10PayerMatchV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0aB0V11payer_matchAA10PayerMatchVSgvp",
+            "mangledName": "$s17InsuranceCardScan0aB0V11payer_matchAA10PayerMatchVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.PayerMatch?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayerMatch",
+                        "printedName": "InsuranceCardScan.PayerMatch",
+                        "usr": "s:17InsuranceCardScan10PayerMatchV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0aB0V11payer_matchAA10PayerMatchVSgvg",
+                "mangledName": "$s17InsuranceCardScan0aB0V11payer_matchAA10PayerMatchVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deleted",
+            "printedName": "deleted",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0aB0V7deletedSbSgvp",
+            "mangledName": "$s17InsuranceCardScan0aB0V7deletedSbSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0aB0V7deletedSbSgvg",
+                "mangledName": "$s17InsuranceCardScan0aB0V7deletedSbSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "images",
+            "printedName": "images",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.CardImages?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardImages",
+                    "printedName": "InsuranceCardScan.CardImages",
+                    "usr": "s:17InsuranceCardScan0B6ImagesV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0aB0V6imagesAA0B6ImagesVSgvp",
+            "mangledName": "$s17InsuranceCardScan0aB0V6imagesAA0B6ImagesVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.CardImages?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardImages",
+                        "printedName": "InsuranceCardScan.CardImages",
+                        "usr": "s:17InsuranceCardScan0B6ImagesV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0aB0V6imagesAA0B6ImagesVSgvg",
+                "mangledName": "$s17InsuranceCardScan0aB0V6imagesAA0B6ImagesVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "metadata",
+            "printedName": "metadata",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.Metadata?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metadata",
+                    "printedName": "InsuranceCardScan.Metadata",
+                    "usr": "s:17InsuranceCardScan8MetadataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0aB0V8metadataAA8MetadataVSgvp",
+            "mangledName": "$s17InsuranceCardScan0aB0V8metadataAA8MetadataVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.Metadata?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metadata",
+                        "printedName": "InsuranceCardScan.Metadata",
+                        "usr": "s:17InsuranceCardScan8MetadataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0aB0V8metadataAA8MetadataVSgvg",
+                "mangledName": "$s17InsuranceCardScan0aB0V8metadataAA8MetadataVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "memberNumber",
             "printedName": "memberNumber",
             "children": [
@@ -572,8 +1057,10 @@
             "usr": "s:17InsuranceCardScan0aB0V12memberNumberSSSgvp",
             "mangledName": "$s17InsuranceCardScan0aB0V12memberNumberSSSgvp",
             "moduleName": "InsuranceCardScan",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "accessors": [
               {
@@ -628,8 +1115,10 @@
             "usr": "s:17InsuranceCardScan0aB0V11groupNumberSSSgvp",
             "mangledName": "$s17InsuranceCardScan0aB0V11groupNumberSSSgvp",
             "moduleName": "InsuranceCardScan",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "accessors": [
               {
@@ -684,8 +1173,10 @@
             "usr": "s:17InsuranceCardScan0aB0V9payerNameSSSgvp",
             "mangledName": "$s17InsuranceCardScan0aB0V9payerNameSSSgvp",
             "moduleName": "InsuranceCardScan",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "accessors": [
               {
@@ -740,8 +1231,10 @@
             "usr": "s:17InsuranceCardScan0aB0V5rxBinSSSgvp",
             "mangledName": "$s17InsuranceCardScan0aB0V5rxBinSSSgvp",
             "moduleName": "InsuranceCardScan",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "accessors": [
               {
@@ -796,8 +1289,10 @@
             "usr": "s:17InsuranceCardScan0aB0V5rxPCNSSSgvp",
             "mangledName": "$s17InsuranceCardScan0aB0V5rxPCNSSSgvp",
             "moduleName": "InsuranceCardScan",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "accessors": [
               {
@@ -852,8 +1347,10 @@
             "usr": "s:17InsuranceCardScan0aB0V7rxGroupSSSgvp",
             "mangledName": "$s17InsuranceCardScan0aB0V7rxGroupSSSgvp",
             "moduleName": "InsuranceCardScan",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "accessors": [
               {
@@ -908,8 +1405,10 @@
             "usr": "s:17InsuranceCardScan0aB0V10memberNameSSSgvp",
             "mangledName": "$s17InsuranceCardScan0aB0V10memberNameSSSgvp",
             "moduleName": "InsuranceCardScan",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "accessors": [
               {
@@ -972,8 +1471,10 @@
             "usr": "s:17InsuranceCardScan0aB0V14dependentNamesSaySSGSgvp",
             "mangledName": "$s17InsuranceCardScan0aB0V14dependentNamesSaySSGSgvp",
             "moduleName": "InsuranceCardScan",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "accessors": [
               {
@@ -1036,8 +1537,10 @@
             "usr": "s:17InsuranceCardScan0aB0V8planNameSSSgvp",
             "mangledName": "$s17InsuranceCardScan0aB0V8planNameSSSgvp",
             "moduleName": "InsuranceCardScan",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "accessors": [
               {
@@ -1092,8 +1595,10 @@
             "usr": "s:17InsuranceCardScan0aB0V6planIdSSSgvp",
             "mangledName": "$s17InsuranceCardScan0aB0V6planIdSSSgvp",
             "moduleName": "InsuranceCardScan",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "accessors": [
               {
@@ -1148,8 +1653,10 @@
             "usr": "s:17InsuranceCardScan0aB0V14cardSpecificIdSSSgvp",
             "mangledName": "$s17InsuranceCardScan0aB0V14cardSpecificIdSSSgvp",
             "moduleName": "InsuranceCardScan",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "accessors": [
               {
@@ -1204,8 +1711,10 @@
             "usr": "s:17InsuranceCardScan0aB0V9startDateSSSgvp",
             "mangledName": "$s17InsuranceCardScan0aB0V9startDateSSSgvp",
             "moduleName": "InsuranceCardScan",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "accessors": [
               {
@@ -1295,6 +1804,2674 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardDetails",
+        "printedName": "CardDetails",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "memberNumber",
+            "printedName": "memberNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.CardDetail?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetail",
+                    "printedName": "InsuranceCardScan.CardDetail",
+                    "usr": "s:17InsuranceCardScan0B6DetailV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B7DetailsV12memberNumberAA0B6DetailVSgvp",
+            "mangledName": "$s17InsuranceCardScan0B7DetailsV12memberNumberAA0B6DetailVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.CardDetail?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetail",
+                        "printedName": "InsuranceCardScan.CardDetail",
+                        "usr": "s:17InsuranceCardScan0B6DetailV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B7DetailsV12memberNumberAA0B6DetailVSgvg",
+                "mangledName": "$s17InsuranceCardScan0B7DetailsV12memberNumberAA0B6DetailVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "groupNumber",
+            "printedName": "groupNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.CardDetail?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetail",
+                    "printedName": "InsuranceCardScan.CardDetail",
+                    "usr": "s:17InsuranceCardScan0B6DetailV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B7DetailsV11groupNumberAA0B6DetailVSgvp",
+            "mangledName": "$s17InsuranceCardScan0B7DetailsV11groupNumberAA0B6DetailVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.CardDetail?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetail",
+                        "printedName": "InsuranceCardScan.CardDetail",
+                        "usr": "s:17InsuranceCardScan0B6DetailV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B7DetailsV11groupNumberAA0B6DetailVSgvg",
+                "mangledName": "$s17InsuranceCardScan0B7DetailsV11groupNumberAA0B6DetailVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "payerName",
+            "printedName": "payerName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.CardDetail?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetail",
+                    "printedName": "InsuranceCardScan.CardDetail",
+                    "usr": "s:17InsuranceCardScan0B6DetailV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B7DetailsV9payerNameAA0B6DetailVSgvp",
+            "mangledName": "$s17InsuranceCardScan0B7DetailsV9payerNameAA0B6DetailVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.CardDetail?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetail",
+                        "printedName": "InsuranceCardScan.CardDetail",
+                        "usr": "s:17InsuranceCardScan0B6DetailV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B7DetailsV9payerNameAA0B6DetailVSgvg",
+                "mangledName": "$s17InsuranceCardScan0B7DetailsV9payerNameAA0B6DetailVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "payerId",
+            "printedName": "payerId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.CardDetail?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetail",
+                    "printedName": "InsuranceCardScan.CardDetail",
+                    "usr": "s:17InsuranceCardScan0B6DetailV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B7DetailsV7payerIdAA0B6DetailVSgvp",
+            "mangledName": "$s17InsuranceCardScan0B7DetailsV7payerIdAA0B6DetailVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.CardDetail?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetail",
+                        "printedName": "InsuranceCardScan.CardDetail",
+                        "usr": "s:17InsuranceCardScan0B6DetailV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B7DetailsV7payerIdAA0B6DetailVSgvg",
+                "mangledName": "$s17InsuranceCardScan0B7DetailsV7payerIdAA0B6DetailVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rxBin",
+            "printedName": "rxBin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.CardDetail?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetail",
+                    "printedName": "InsuranceCardScan.CardDetail",
+                    "usr": "s:17InsuranceCardScan0B6DetailV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B7DetailsV5rxBinAA0B6DetailVSgvp",
+            "mangledName": "$s17InsuranceCardScan0B7DetailsV5rxBinAA0B6DetailVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.CardDetail?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetail",
+                        "printedName": "InsuranceCardScan.CardDetail",
+                        "usr": "s:17InsuranceCardScan0B6DetailV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B7DetailsV5rxBinAA0B6DetailVSgvg",
+                "mangledName": "$s17InsuranceCardScan0B7DetailsV5rxBinAA0B6DetailVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rxPCN",
+            "printedName": "rxPCN",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.CardDetail?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetail",
+                    "printedName": "InsuranceCardScan.CardDetail",
+                    "usr": "s:17InsuranceCardScan0B6DetailV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B7DetailsV5rxPCNAA0B6DetailVSgvp",
+            "mangledName": "$s17InsuranceCardScan0B7DetailsV5rxPCNAA0B6DetailVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.CardDetail?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetail",
+                        "printedName": "InsuranceCardScan.CardDetail",
+                        "usr": "s:17InsuranceCardScan0B6DetailV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B7DetailsV5rxPCNAA0B6DetailVSgvg",
+                "mangledName": "$s17InsuranceCardScan0B7DetailsV5rxPCNAA0B6DetailVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rxGroup",
+            "printedName": "rxGroup",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.CardDetail?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetail",
+                    "printedName": "InsuranceCardScan.CardDetail",
+                    "usr": "s:17InsuranceCardScan0B6DetailV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B7DetailsV7rxGroupAA0B6DetailVSgvp",
+            "mangledName": "$s17InsuranceCardScan0B7DetailsV7rxGroupAA0B6DetailVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.CardDetail?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetail",
+                        "printedName": "InsuranceCardScan.CardDetail",
+                        "usr": "s:17InsuranceCardScan0B6DetailV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B7DetailsV7rxGroupAA0B6DetailVSgvg",
+                "mangledName": "$s17InsuranceCardScan0B7DetailsV7rxGroupAA0B6DetailVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rxId",
+            "printedName": "rxId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.CardDetail?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetail",
+                    "printedName": "InsuranceCardScan.CardDetail",
+                    "usr": "s:17InsuranceCardScan0B6DetailV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B7DetailsV4rxIdAA0B6DetailVSgvp",
+            "mangledName": "$s17InsuranceCardScan0B7DetailsV4rxIdAA0B6DetailVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.CardDetail?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetail",
+                        "printedName": "InsuranceCardScan.CardDetail",
+                        "usr": "s:17InsuranceCardScan0B6DetailV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B7DetailsV4rxIdAA0B6DetailVSgvg",
+                "mangledName": "$s17InsuranceCardScan0B7DetailsV4rxIdAA0B6DetailVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "memberName",
+            "printedName": "memberName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.CardDetail?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetail",
+                    "printedName": "InsuranceCardScan.CardDetail",
+                    "usr": "s:17InsuranceCardScan0B6DetailV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B7DetailsV10memberNameAA0B6DetailVSgvp",
+            "mangledName": "$s17InsuranceCardScan0B7DetailsV10memberNameAA0B6DetailVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.CardDetail?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetail",
+                        "printedName": "InsuranceCardScan.CardDetail",
+                        "usr": "s:17InsuranceCardScan0B6DetailV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B7DetailsV10memberNameAA0B6DetailVSgvg",
+                "mangledName": "$s17InsuranceCardScan0B7DetailsV10memberNameAA0B6DetailVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dependentNames",
+            "printedName": "dependentNames",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[InsuranceCardScan.CardDetail]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[InsuranceCardScan.CardDetail]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetail",
+                        "printedName": "InsuranceCardScan.CardDetail",
+                        "usr": "s:17InsuranceCardScan0B6DetailV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B7DetailsV14dependentNamesSayAA0B6DetailVGSgvp",
+            "mangledName": "$s17InsuranceCardScan0B7DetailsV14dependentNamesSayAA0B6DetailVGSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[InsuranceCardScan.CardDetail]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[InsuranceCardScan.CardDetail]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CardDetail",
+                            "printedName": "InsuranceCardScan.CardDetail",
+                            "usr": "s:17InsuranceCardScan0B6DetailV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B7DetailsV14dependentNamesSayAA0B6DetailVGSgvg",
+                "mangledName": "$s17InsuranceCardScan0B7DetailsV14dependentNamesSayAA0B6DetailVGSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "planName",
+            "printedName": "planName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.CardDetail?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetail",
+                    "printedName": "InsuranceCardScan.CardDetail",
+                    "usr": "s:17InsuranceCardScan0B6DetailV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B7DetailsV8planNameAA0B6DetailVSgvp",
+            "mangledName": "$s17InsuranceCardScan0B7DetailsV8planNameAA0B6DetailVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.CardDetail?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetail",
+                        "printedName": "InsuranceCardScan.CardDetail",
+                        "usr": "s:17InsuranceCardScan0B6DetailV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B7DetailsV8planNameAA0B6DetailVSgvg",
+                "mangledName": "$s17InsuranceCardScan0B7DetailsV8planNameAA0B6DetailVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "planId",
+            "printedName": "planId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.CardDetail?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetail",
+                    "printedName": "InsuranceCardScan.CardDetail",
+                    "usr": "s:17InsuranceCardScan0B6DetailV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B7DetailsV6planIdAA0B6DetailVSgvp",
+            "mangledName": "$s17InsuranceCardScan0B7DetailsV6planIdAA0B6DetailVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.CardDetail?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetail",
+                        "printedName": "InsuranceCardScan.CardDetail",
+                        "usr": "s:17InsuranceCardScan0B6DetailV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B7DetailsV6planIdAA0B6DetailVSgvg",
+                "mangledName": "$s17InsuranceCardScan0B7DetailsV6planIdAA0B6DetailVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "clientName",
+            "printedName": "clientName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.CardDetail?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetail",
+                    "printedName": "InsuranceCardScan.CardDetail",
+                    "usr": "s:17InsuranceCardScan0B6DetailV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B7DetailsV10clientNameAA0B6DetailVSgvp",
+            "mangledName": "$s17InsuranceCardScan0B7DetailsV10clientNameAA0B6DetailVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.CardDetail?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetail",
+                        "printedName": "InsuranceCardScan.CardDetail",
+                        "usr": "s:17InsuranceCardScan0B6DetailV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B7DetailsV10clientNameAA0B6DetailVSgvg",
+                "mangledName": "$s17InsuranceCardScan0B7DetailsV10clientNameAA0B6DetailVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cardSpecificId",
+            "printedName": "cardSpecificId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.CardDetail?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetail",
+                    "printedName": "InsuranceCardScan.CardDetail",
+                    "usr": "s:17InsuranceCardScan0B6DetailV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B7DetailsV14cardSpecificIdAA0B6DetailVSgvp",
+            "mangledName": "$s17InsuranceCardScan0B7DetailsV14cardSpecificIdAA0B6DetailVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.CardDetail?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetail",
+                        "printedName": "InsuranceCardScan.CardDetail",
+                        "usr": "s:17InsuranceCardScan0B6DetailV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B7DetailsV14cardSpecificIdAA0B6DetailVSgvg",
+                "mangledName": "$s17InsuranceCardScan0B7DetailsV14cardSpecificIdAA0B6DetailVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "startDate",
+            "printedName": "startDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.CardDetail?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetail",
+                    "printedName": "InsuranceCardScan.CardDetail",
+                    "usr": "s:17InsuranceCardScan0B6DetailV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B7DetailsV9startDateAA0B6DetailVSgvp",
+            "mangledName": "$s17InsuranceCardScan0B7DetailsV9startDateAA0B6DetailVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.CardDetail?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetail",
+                        "printedName": "InsuranceCardScan.CardDetail",
+                        "usr": "s:17InsuranceCardScan0B6DetailV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B7DetailsV9startDateAA0B6DetailVSgvg",
+                "mangledName": "$s17InsuranceCardScan0B7DetailsV9startDateAA0B6DetailVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardDetails",
+                "printedName": "InsuranceCardScan.CardDetails",
+                "usr": "s:17InsuranceCardScan0B7DetailsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17InsuranceCardScan0B7DetailsV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s17InsuranceCardScan0B7DetailsV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17InsuranceCardScan0B7DetailsV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s17InsuranceCardScan0B7DetailsV6encode2toys7Encoder_p_tKF",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17InsuranceCardScan0B7DetailsV",
+        "mangledName": "$s17InsuranceCardScan0B7DetailsV",
+        "moduleName": "InsuranceCardScan",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardDetail",
+        "printedName": "CardDetail",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B6DetailV5valueSSSgvp",
+            "mangledName": "$s17InsuranceCardScan0B6DetailV5valueSSSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B6DetailV5valueSSSgvg",
+                "mangledName": "$s17InsuranceCardScan0B6DetailV5valueSSSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardDetail",
+                "printedName": "InsuranceCardScan.CardDetail",
+                "usr": "s:17InsuranceCardScan0B6DetailV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17InsuranceCardScan0B6DetailV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s17InsuranceCardScan0B6DetailV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17InsuranceCardScan0B6DetailV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s17InsuranceCardScan0B6DetailV6encode2toys7Encoder_p_tKF",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17InsuranceCardScan0B6DetailV",
+        "mangledName": "$s17InsuranceCardScan0B6DetailV",
+        "moduleName": "InsuranceCardScan",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayerMatch",
+        "printedName": "PayerMatch",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "cardscanPayerId",
+            "printedName": "cardscanPayerId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan10PayerMatchV08cardscanD2IdSSSgvp",
+            "mangledName": "$s17InsuranceCardScan10PayerMatchV08cardscanD2IdSSSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan10PayerMatchV08cardscanD2IdSSSgvg",
+                "mangledName": "$s17InsuranceCardScan10PayerMatchV08cardscanD2IdSSSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cardscanPayerName",
+            "printedName": "cardscanPayerName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan10PayerMatchV08cardscanD4NameSSSgvp",
+            "mangledName": "$s17InsuranceCardScan10PayerMatchV08cardscanD4NameSSSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan10PayerMatchV08cardscanD4NameSSSgvg",
+                "mangledName": "$s17InsuranceCardScan10PayerMatchV08cardscanD4NameSSSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "score",
+            "printedName": "score",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan10PayerMatchV5scoreSSSgvp",
+            "mangledName": "$s17InsuranceCardScan10PayerMatchV5scoreSSSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan10PayerMatchV5scoreSSSgvg",
+                "mangledName": "$s17InsuranceCardScan10PayerMatchV5scoreSSSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "changeHealthcare",
+            "printedName": "changeHealthcare",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[InsuranceCardScan.CHCPayerRecord]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[InsuranceCardScan.CHCPayerRecord]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CHCPayerRecord",
+                        "printedName": "InsuranceCardScan.CHCPayerRecord",
+                        "usr": "s:17InsuranceCardScan14CHCPayerRecordV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan10PayerMatchV16changeHealthcareSayAA14CHCPayerRecordVGSgvp",
+            "mangledName": "$s17InsuranceCardScan10PayerMatchV16changeHealthcareSayAA14CHCPayerRecordVGSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[InsuranceCardScan.CHCPayerRecord]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[InsuranceCardScan.CHCPayerRecord]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CHCPayerRecord",
+                            "printedName": "InsuranceCardScan.CHCPayerRecord",
+                            "usr": "s:17InsuranceCardScan14CHCPayerRecordV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan10PayerMatchV16changeHealthcareSayAA14CHCPayerRecordVGSgvg",
+                "mangledName": "$s17InsuranceCardScan10PayerMatchV16changeHealthcareSayAA14CHCPayerRecordVGSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "custom",
+            "printedName": "custom",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[InsuranceCardScan.CustomPayerRecord]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[InsuranceCardScan.CustomPayerRecord]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CustomPayerRecord",
+                        "printedName": "InsuranceCardScan.CustomPayerRecord",
+                        "usr": "s:17InsuranceCardScan17CustomPayerRecordV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan10PayerMatchV6customSayAA06CustomD6RecordVGSgvp",
+            "mangledName": "$s17InsuranceCardScan10PayerMatchV6customSayAA06CustomD6RecordVGSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[InsuranceCardScan.CustomPayerRecord]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[InsuranceCardScan.CustomPayerRecord]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CustomPayerRecord",
+                            "printedName": "InsuranceCardScan.CustomPayerRecord",
+                            "usr": "s:17InsuranceCardScan17CustomPayerRecordV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan10PayerMatchV6customSayAA06CustomD6RecordVGSgvg",
+                "mangledName": "$s17InsuranceCardScan10PayerMatchV6customSayAA06CustomD6RecordVGSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan10PayerMatchV7messageSSSgvp",
+            "mangledName": "$s17InsuranceCardScan10PayerMatchV7messageSSSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan10PayerMatchV7messageSSSgvg",
+                "mangledName": "$s17InsuranceCardScan10PayerMatchV7messageSSSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayerMatch",
+                "printedName": "InsuranceCardScan.PayerMatch",
+                "usr": "s:17InsuranceCardScan10PayerMatchV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17InsuranceCardScan10PayerMatchV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s17InsuranceCardScan10PayerMatchV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17InsuranceCardScan10PayerMatchV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s17InsuranceCardScan10PayerMatchV6encode2toys7Encoder_p_tKF",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17InsuranceCardScan10PayerMatchV",
+        "mangledName": "$s17InsuranceCardScan10PayerMatchV",
+        "moduleName": "InsuranceCardScan",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CHCPayerRecord",
+        "printedName": "CHCPayerRecord",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "chc_payer_id",
+            "printedName": "chc_payer_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan14CHCPayerRecordV12chc_payer_idSSvp",
+            "mangledName": "$s17InsuranceCardScan14CHCPayerRecordV12chc_payer_idSSvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan14CHCPayerRecordV12chc_payer_idSSvg",
+                "mangledName": "$s17InsuranceCardScan14CHCPayerRecordV12chc_payer_idSSvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "chc_payer_name",
+            "printedName": "chc_payer_name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan14CHCPayerRecordV14chc_payer_nameSSvp",
+            "mangledName": "$s17InsuranceCardScan14CHCPayerRecordV14chc_payer_nameSSvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan14CHCPayerRecordV14chc_payer_nameSSvg",
+                "mangledName": "$s17InsuranceCardScan14CHCPayerRecordV14chc_payer_nameSSvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "score",
+            "printedName": "score",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan14CHCPayerRecordV5scoreSSvp",
+            "mangledName": "$s17InsuranceCardScan14CHCPayerRecordV5scoreSSvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan14CHCPayerRecordV5scoreSSvg",
+                "mangledName": "$s17InsuranceCardScan14CHCPayerRecordV5scoreSSvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CHCPayerRecord",
+                "printedName": "InsuranceCardScan.CHCPayerRecord",
+                "usr": "s:17InsuranceCardScan14CHCPayerRecordV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17InsuranceCardScan14CHCPayerRecordV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s17InsuranceCardScan14CHCPayerRecordV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17InsuranceCardScan14CHCPayerRecordV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s17InsuranceCardScan14CHCPayerRecordV6encode2toys7Encoder_p_tKF",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17InsuranceCardScan14CHCPayerRecordV",
+        "mangledName": "$s17InsuranceCardScan14CHCPayerRecordV",
+        "moduleName": "InsuranceCardScan",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CustomPayerRecord",
+        "printedName": "CustomPayerRecord",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "custom_payer_id",
+            "printedName": "custom_payer_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan17CustomPayerRecordV15custom_payer_idSSvp",
+            "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV15custom_payer_idSSvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan17CustomPayerRecordV15custom_payer_idSSvg",
+                "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV15custom_payer_idSSvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "custom_payer_name",
+            "printedName": "custom_payer_name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan17CustomPayerRecordV17custom_payer_nameSSvp",
+            "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV17custom_payer_nameSSvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan17CustomPayerRecordV17custom_payer_nameSSvg",
+                "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV17custom_payer_nameSSvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "custom_payer_name_alt",
+            "printedName": "custom_payer_name_alt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan17CustomPayerRecordV21custom_payer_name_altSSSgvp",
+            "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV21custom_payer_name_altSSSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan17CustomPayerRecordV21custom_payer_name_altSSSgvg",
+                "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV21custom_payer_name_altSSSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "score",
+            "printedName": "score",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan17CustomPayerRecordV5scoreSSvp",
+            "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV5scoreSSvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan17CustomPayerRecordV5scoreSSvg",
+                "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV5scoreSSvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "source",
+            "printedName": "source",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan17CustomPayerRecordV6sourceSSvp",
+            "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV6sourceSSvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan17CustomPayerRecordV6sourceSSvg",
+                "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV6sourceSSvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomPayerRecord",
+                "printedName": "InsuranceCardScan.CustomPayerRecord",
+                "usr": "s:17InsuranceCardScan17CustomPayerRecordV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17InsuranceCardScan17CustomPayerRecordV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17InsuranceCardScan17CustomPayerRecordV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV6encode2toys7Encoder_p_tKF",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17InsuranceCardScan17CustomPayerRecordV",
+        "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV",
+        "moduleName": "InsuranceCardScan",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardImages",
+        "printedName": "CardImages",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "front",
+            "printedName": "front",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.ImageDetail?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImageDetail",
+                    "printedName": "InsuranceCardScan.ImageDetail",
+                    "usr": "s:17InsuranceCardScan11ImageDetailV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B6ImagesV5frontAA11ImageDetailVSgvp",
+            "mangledName": "$s17InsuranceCardScan0B6ImagesV5frontAA11ImageDetailVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.ImageDetail?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImageDetail",
+                        "printedName": "InsuranceCardScan.ImageDetail",
+                        "usr": "s:17InsuranceCardScan11ImageDetailV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B6ImagesV5frontAA11ImageDetailVSgvg",
+                "mangledName": "$s17InsuranceCardScan0B6ImagesV5frontAA11ImageDetailVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "back",
+            "printedName": "back",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InsuranceCardScan.ImageDetail?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImageDetail",
+                    "printedName": "InsuranceCardScan.ImageDetail",
+                    "usr": "s:17InsuranceCardScan11ImageDetailV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan0B6ImagesV4backAA11ImageDetailVSgvp",
+            "mangledName": "$s17InsuranceCardScan0B6ImagesV4backAA11ImageDetailVSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InsuranceCardScan.ImageDetail?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImageDetail",
+                        "printedName": "InsuranceCardScan.ImageDetail",
+                        "usr": "s:17InsuranceCardScan11ImageDetailV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan0B6ImagesV4backAA11ImageDetailVSgvg",
+                "mangledName": "$s17InsuranceCardScan0B6ImagesV4backAA11ImageDetailVSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardImages",
+                "printedName": "InsuranceCardScan.CardImages",
+                "usr": "s:17InsuranceCardScan0B6ImagesV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17InsuranceCardScan0B6ImagesV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s17InsuranceCardScan0B6ImagesV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17InsuranceCardScan0B6ImagesV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s17InsuranceCardScan0B6ImagesV6encode2toys7Encoder_p_tKF",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17InsuranceCardScan0B6ImagesV",
+        "mangledName": "$s17InsuranceCardScan0B6ImagesV",
+        "moduleName": "InsuranceCardScan",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImageDetail",
+        "printedName": "ImageDetail",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan11ImageDetailV3urlSSvp",
+            "mangledName": "$s17InsuranceCardScan11ImageDetailV3urlSSvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan11ImageDetailV3urlSSvg",
+                "mangledName": "$s17InsuranceCardScan11ImageDetailV3urlSSvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImageDetail",
+                "printedName": "InsuranceCardScan.ImageDetail",
+                "usr": "s:17InsuranceCardScan11ImageDetailV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17InsuranceCardScan11ImageDetailV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s17InsuranceCardScan11ImageDetailV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17InsuranceCardScan11ImageDetailV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s17InsuranceCardScan11ImageDetailV6encode2toys7Encoder_p_tKF",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17InsuranceCardScan11ImageDetailV",
+        "mangledName": "$s17InsuranceCardScan11ImageDetailV",
+        "moduleName": "InsuranceCardScan",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Metadata",
+        "printedName": "Metadata",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "insurance_scan_version",
+            "printedName": "insurance_scan_version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan8MetadataV22insurance_scan_versionSSSgvp",
+            "mangledName": "$s17InsuranceCardScan8MetadataV22insurance_scan_versionSSSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan8MetadataV22insurance_scan_versionSSSgvg",
+                "mangledName": "$s17InsuranceCardScan8MetadataV22insurance_scan_versionSSSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "payer_match_version",
+            "printedName": "payer_match_version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17InsuranceCardScan8MetadataV19payer_match_versionSSSgvp",
+            "mangledName": "$s17InsuranceCardScan8MetadataV19payer_match_versionSSSgvp",
+            "moduleName": "InsuranceCardScan",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17InsuranceCardScan8MetadataV19payer_match_versionSSSgvg",
+                "mangledName": "$s17InsuranceCardScan8MetadataV19payer_match_versionSSSgvg",
+                "moduleName": "InsuranceCardScan",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Metadata",
+                "printedName": "InsuranceCardScan.Metadata",
+                "usr": "s:17InsuranceCardScan8MetadataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17InsuranceCardScan8MetadataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s17InsuranceCardScan8MetadataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17InsuranceCardScan8MetadataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s17InsuranceCardScan8MetadataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "InsuranceCardScan",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17InsuranceCardScan8MetadataV",
+        "mangledName": "$s17InsuranceCardScan8MetadataV",
+        "moduleName": "InsuranceCardScan",
+        "declAttributes": [
+          "AccessControl"
         ],
         "conformances": [
           {

@@ -12,6 +12,11 @@ import _SwiftConcurrencyShims
 public enum CardState : Swift.String, Swift.Codable {
   case pending
   case processing
+  case frontside_processing
+  case frontside_failed
+  case backside_processing
+  case backside_failed
+  case post_processing
   case completed
   case error
   case unknown
@@ -26,42 +31,126 @@ public struct InsuranceCard : Swift.Codable {
   public let state: InsuranceCardScan.CardState
   public let createdAt: Swift.String?
   public let message: Swift.String?
+  public let details: InsuranceCardScan.CardDetails?
+  public let payer_match: InsuranceCardScan.PayerMatch?
+  public let deleted: Swift.Bool?
+  public let images: InsuranceCardScan.CardImages?
+  public let metadata: InsuranceCardScan.Metadata?
+  @available(*, deprecated, message: "Use direct property access with `.details?.memberNumber?.value`")
   public var memberNumber: Swift.String? {
     get
   }
+  @available(*, deprecated, message: "Use direct property access with `.details?.groupNumber?.value`")
   public var groupNumber: Swift.String? {
     get
   }
+  @available(*, deprecated, message: "Use direct property access with `.details?.payerName?.value`")
   public var payerName: Swift.String? {
     get
   }
+  @available(*, deprecated, message: "Use direct property access with `.details?.rxBin?.value`")
   public var rxBin: Swift.String? {
     get
   }
+  @available(*, deprecated, message: "Use direct property access with `.details?.rxPCN?.value`")
   public var rxPCN: Swift.String? {
     get
   }
+  @available(*, deprecated, message: "Use direct property access with `.details?.rxGroup?.value`")
   public var rxGroup: Swift.String? {
     get
   }
+  @available(*, deprecated, message: "Use direct property access with `.details?.memberName?.value`")
   public var memberName: Swift.String? {
     get
   }
+  @available(*, deprecated, message: "Use direct property access with `.details?.dependentNames`")
   public var dependentNames: [Swift.String]? {
     get
   }
+  @available(*, deprecated, message: "Use direct property access with `.details?.planName?.value`")
   public var planName: Swift.String? {
     get
   }
+  @available(*, deprecated, message: "Use direct property access with `.details?.planId?.value`")
   public var planId: Swift.String? {
     get
   }
+  @available(*, deprecated, message: "Use direct property access with `.details?.cardSpecificId?.value`")
   public var cardSpecificId: Swift.String? {
     get
   }
+  @available(*, deprecated, message: "Use direct property access with `.details?.startDate?.value`")
   public var startDate: Swift.String? {
     get
   }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CardDetails : Swift.Codable {
+  public let memberNumber: InsuranceCardScan.CardDetail?
+  public let groupNumber: InsuranceCardScan.CardDetail?
+  public let payerName: InsuranceCardScan.CardDetail?
+  public let payerId: InsuranceCardScan.CardDetail?
+  public let rxBin: InsuranceCardScan.CardDetail?
+  public let rxPCN: InsuranceCardScan.CardDetail?
+  public let rxGroup: InsuranceCardScan.CardDetail?
+  public let rxId: InsuranceCardScan.CardDetail?
+  public let memberName: InsuranceCardScan.CardDetail?
+  public let dependentNames: [InsuranceCardScan.CardDetail]?
+  public let planName: InsuranceCardScan.CardDetail?
+  public let planId: InsuranceCardScan.CardDetail?
+  public let clientName: InsuranceCardScan.CardDetail?
+  public let cardSpecificId: InsuranceCardScan.CardDetail?
+  public let startDate: InsuranceCardScan.CardDetail?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CardDetail : Swift.Codable {
+  public let value: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PayerMatch : Swift.Codable {
+  public let cardscanPayerId: Swift.String?
+  public let cardscanPayerName: Swift.String?
+  public let score: Swift.String?
+  public let changeHealthcare: [InsuranceCardScan.CHCPayerRecord]?
+  public let custom: [InsuranceCardScan.CustomPayerRecord]?
+  public let message: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CHCPayerRecord : Swift.Codable {
+  public let chc_payer_id: Swift.String
+  public let chc_payer_name: Swift.String
+  public let score: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CustomPayerRecord : Swift.Codable {
+  public let custom_payer_id: Swift.String
+  public let custom_payer_name: Swift.String
+  public let custom_payer_name_alt: Swift.String?
+  public let score: Swift.String
+  public let source: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CardImages : Swift.Codable {
+  public let front: InsuranceCardScan.ImageDetail?
+  public let back: InsuranceCardScan.ImageDetail?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ImageDetail : Swift.Codable {
+  public let url: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Metadata : Swift.Codable {
+  public let insurance_scan_version: Swift.String?
+  public let payer_match_version: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
