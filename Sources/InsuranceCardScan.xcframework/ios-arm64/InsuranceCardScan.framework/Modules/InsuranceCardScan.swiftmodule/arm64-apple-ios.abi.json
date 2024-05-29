@@ -795,8 +795,8 @@
           },
           {
             "kind": "Var",
-            "name": "payer_match",
-            "printedName": "payer_match",
+            "name": "payerMatch",
+            "printedName": "payerMatch",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -814,8 +814,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17InsuranceCardScan0aB0V11payer_matchAA10PayerMatchVSgvp",
-            "mangledName": "$s17InsuranceCardScan0aB0V11payer_matchAA10PayerMatchVSgvp",
+            "usr": "s:17InsuranceCardScan0aB0V10payerMatchAA05PayerE0VSgvp",
+            "mangledName": "$s17InsuranceCardScan0aB0V10payerMatchAA05PayerE0VSgvp",
             "moduleName": "InsuranceCardScan",
             "declAttributes": [
               "HasStorage",
@@ -845,8 +845,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17InsuranceCardScan0aB0V11payer_matchAA10PayerMatchVSgvg",
-                "mangledName": "$s17InsuranceCardScan0aB0V11payer_matchAA10PayerMatchVSgvg",
+                "usr": "s:17InsuranceCardScan0aB0V10payerMatchAA05PayerE0VSgvg",
+                "mangledName": "$s17InsuranceCardScan0aB0V10payerMatchAA05PayerE0VSgvg",
                 "moduleName": "InsuranceCardScan",
                 "implicit": true,
                 "accessorKind": "get"
@@ -3440,8 +3440,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "chc_payer_id",
-            "printedName": "chc_payer_id",
+            "name": "chcPayerId",
+            "printedName": "chcPayerId",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3451,8 +3451,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17InsuranceCardScan14CHCPayerRecordV12chc_payer_idSSvp",
-            "mangledName": "$s17InsuranceCardScan14CHCPayerRecordV12chc_payer_idSSvp",
+            "usr": "s:17InsuranceCardScan14CHCPayerRecordV10chcPayerIdSSvp",
+            "mangledName": "$s17InsuranceCardScan14CHCPayerRecordV10chcPayerIdSSvp",
             "moduleName": "InsuranceCardScan",
             "declAttributes": [
               "HasStorage",
@@ -3474,8 +3474,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17InsuranceCardScan14CHCPayerRecordV12chc_payer_idSSvg",
-                "mangledName": "$s17InsuranceCardScan14CHCPayerRecordV12chc_payer_idSSvg",
+                "usr": "s:17InsuranceCardScan14CHCPayerRecordV10chcPayerIdSSvg",
+                "mangledName": "$s17InsuranceCardScan14CHCPayerRecordV10chcPayerIdSSvg",
                 "moduleName": "InsuranceCardScan",
                 "implicit": true,
                 "accessorKind": "get"
@@ -3484,8 +3484,8 @@
           },
           {
             "kind": "Var",
-            "name": "chc_payer_name",
-            "printedName": "chc_payer_name",
+            "name": "chcPayerName",
+            "printedName": "chcPayerName",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3495,8 +3495,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17InsuranceCardScan14CHCPayerRecordV14chc_payer_nameSSvp",
-            "mangledName": "$s17InsuranceCardScan14CHCPayerRecordV14chc_payer_nameSSvp",
+            "usr": "s:17InsuranceCardScan14CHCPayerRecordV12chcPayerNameSSvp",
+            "mangledName": "$s17InsuranceCardScan14CHCPayerRecordV12chcPayerNameSSvp",
             "moduleName": "InsuranceCardScan",
             "declAttributes": [
               "HasStorage",
@@ -3518,8 +3518,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17InsuranceCardScan14CHCPayerRecordV14chc_payer_nameSSvg",
-                "mangledName": "$s17InsuranceCardScan14CHCPayerRecordV14chc_payer_nameSSvg",
+                "usr": "s:17InsuranceCardScan14CHCPayerRecordV12chcPayerNameSSvg",
+                "mangledName": "$s17InsuranceCardScan14CHCPayerRecordV12chcPayerNameSSvg",
                 "moduleName": "InsuranceCardScan",
                 "implicit": true,
                 "accessorKind": "get"
@@ -3653,8 +3653,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "custom_payer_id",
-            "printedName": "custom_payer_id",
+            "name": "customPayerId",
+            "printedName": "customPayerId",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3664,8 +3664,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17InsuranceCardScan17CustomPayerRecordV15custom_payer_idSSvp",
-            "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV15custom_payer_idSSvp",
+            "usr": "s:17InsuranceCardScan17CustomPayerRecordV06customE2IdSSvp",
+            "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV06customE2IdSSvp",
             "moduleName": "InsuranceCardScan",
             "declAttributes": [
               "HasStorage",
@@ -3687,8 +3687,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17InsuranceCardScan17CustomPayerRecordV15custom_payer_idSSvg",
-                "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV15custom_payer_idSSvg",
+                "usr": "s:17InsuranceCardScan17CustomPayerRecordV06customE2IdSSvg",
+                "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV06customE2IdSSvg",
                 "moduleName": "InsuranceCardScan",
                 "implicit": true,
                 "accessorKind": "get"
@@ -3697,8 +3697,8 @@
           },
           {
             "kind": "Var",
-            "name": "custom_payer_name",
-            "printedName": "custom_payer_name",
+            "name": "customPayerName",
+            "printedName": "customPayerName",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3708,8 +3708,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17InsuranceCardScan17CustomPayerRecordV17custom_payer_nameSSvp",
-            "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV17custom_payer_nameSSvp",
+            "usr": "s:17InsuranceCardScan17CustomPayerRecordV06customE4NameSSvp",
+            "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV06customE4NameSSvp",
             "moduleName": "InsuranceCardScan",
             "declAttributes": [
               "HasStorage",
@@ -3731,8 +3731,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17InsuranceCardScan17CustomPayerRecordV17custom_payer_nameSSvg",
-                "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV17custom_payer_nameSSvg",
+                "usr": "s:17InsuranceCardScan17CustomPayerRecordV06customE4NameSSvg",
+                "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV06customE4NameSSvg",
                 "moduleName": "InsuranceCardScan",
                 "implicit": true,
                 "accessorKind": "get"
@@ -3741,8 +3741,8 @@
           },
           {
             "kind": "Var",
-            "name": "custom_payer_name_alt",
-            "printedName": "custom_payer_name_alt",
+            "name": "customPayerNameAlt",
+            "printedName": "customPayerNameAlt",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3760,8 +3760,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17InsuranceCardScan17CustomPayerRecordV21custom_payer_name_altSSSgvp",
-            "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV21custom_payer_name_altSSSgvp",
+            "usr": "s:17InsuranceCardScan17CustomPayerRecordV06customE7NameAltSSSgvp",
+            "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV06customE7NameAltSSSgvp",
             "moduleName": "InsuranceCardScan",
             "declAttributes": [
               "HasStorage",
@@ -3791,8 +3791,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17InsuranceCardScan17CustomPayerRecordV21custom_payer_name_altSSSgvg",
-                "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV21custom_payer_name_altSSSgvg",
+                "usr": "s:17InsuranceCardScan17CustomPayerRecordV06customE7NameAltSSSgvg",
+                "mangledName": "$s17InsuranceCardScan17CustomPayerRecordV06customE7NameAltSSSgvg",
                 "moduleName": "InsuranceCardScan",
                 "implicit": true,
                 "accessorKind": "get"
@@ -4296,8 +4296,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "insurance_scan_version",
-            "printedName": "insurance_scan_version",
+            "name": "insuranceScanVersion",
+            "printedName": "insuranceScanVersion",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4315,8 +4315,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17InsuranceCardScan8MetadataV22insurance_scan_versionSSSgvp",
-            "mangledName": "$s17InsuranceCardScan8MetadataV22insurance_scan_versionSSSgvp",
+            "usr": "s:17InsuranceCardScan8MetadataV09insuranceC7VersionSSSgvp",
+            "mangledName": "$s17InsuranceCardScan8MetadataV09insuranceC7VersionSSSgvp",
             "moduleName": "InsuranceCardScan",
             "declAttributes": [
               "HasStorage",
@@ -4346,8 +4346,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17InsuranceCardScan8MetadataV22insurance_scan_versionSSSgvg",
-                "mangledName": "$s17InsuranceCardScan8MetadataV22insurance_scan_versionSSSgvg",
+                "usr": "s:17InsuranceCardScan8MetadataV09insuranceC7VersionSSSgvg",
+                "mangledName": "$s17InsuranceCardScan8MetadataV09insuranceC7VersionSSSgvg",
                 "moduleName": "InsuranceCardScan",
                 "implicit": true,
                 "accessorKind": "get"
@@ -4356,8 +4356,8 @@
           },
           {
             "kind": "Var",
-            "name": "payer_match_version",
-            "printedName": "payer_match_version",
+            "name": "payerMatchVersion",
+            "printedName": "payerMatchVersion",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4375,8 +4375,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17InsuranceCardScan8MetadataV19payer_match_versionSSSgvp",
-            "mangledName": "$s17InsuranceCardScan8MetadataV19payer_match_versionSSSgvp",
+            "usr": "s:17InsuranceCardScan8MetadataV17payerMatchVersionSSSgvp",
+            "mangledName": "$s17InsuranceCardScan8MetadataV17payerMatchVersionSSSgvp",
             "moduleName": "InsuranceCardScan",
             "declAttributes": [
               "HasStorage",
@@ -4406,8 +4406,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17InsuranceCardScan8MetadataV19payer_match_versionSSSgvg",
-                "mangledName": "$s17InsuranceCardScan8MetadataV19payer_match_versionSSSgvg",
+                "usr": "s:17InsuranceCardScan8MetadataV17payerMatchVersionSSSgvg",
+                "mangledName": "$s17InsuranceCardScan8MetadataV17payerMatchVersionSSSgvg",
                 "moduleName": "InsuranceCardScan",
                 "implicit": true,
                 "accessorKind": "get"

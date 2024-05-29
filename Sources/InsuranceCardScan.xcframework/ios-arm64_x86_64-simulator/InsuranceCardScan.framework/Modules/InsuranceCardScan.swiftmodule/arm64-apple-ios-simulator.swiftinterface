@@ -32,7 +32,7 @@ public struct InsuranceCard : Swift.Codable {
   public let createdAt: Swift.String?
   public let message: Swift.String?
   public let details: InsuranceCardScan.CardDetails?
-  public let payer_match: InsuranceCardScan.PayerMatch?
+  public let payerMatch: InsuranceCardScan.PayerMatch?
   public let deleted: Swift.Bool?
   public let images: InsuranceCardScan.CardImages?
   public let metadata: InsuranceCardScan.Metadata?
@@ -122,16 +122,16 @@ public struct PayerMatch : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct CHCPayerRecord : Swift.Codable {
-  public let chc_payer_id: Swift.String
-  public let chc_payer_name: Swift.String
+  public let chcPayerId: Swift.String
+  public let chcPayerName: Swift.String
   public let score: Swift.String
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct CustomPayerRecord : Swift.Codable {
-  public let custom_payer_id: Swift.String
-  public let custom_payer_name: Swift.String
-  public let custom_payer_name_alt: Swift.String?
+  public let customPayerId: Swift.String
+  public let customPayerName: Swift.String
+  public let customPayerNameAlt: Swift.String?
   public let score: Swift.String
   public let source: Swift.String
   public func encode(to encoder: any Swift.Encoder) throws
@@ -149,8 +149,8 @@ public struct ImageDetail : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct Metadata : Swift.Codable {
-  public let insurance_scan_version: Swift.String?
-  public let payer_match_version: Swift.String?
+  public let insuranceScanVersion: Swift.String?
+  public let payerMatchVersion: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
