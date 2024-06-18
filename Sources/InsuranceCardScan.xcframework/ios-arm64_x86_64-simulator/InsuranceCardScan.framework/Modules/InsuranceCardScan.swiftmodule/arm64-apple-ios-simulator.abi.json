@@ -4515,7 +4515,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(sessionToken:live:onSuccess:eligibility:messages:messageStyle:autoSwitchActiveColor:autoSwitchInactiveColor:progressBarColor:widgetBackgroundColor:onCancel:onError:onProgress:onEligibilitySuccess:onEligibilityError:backsideSupport:onRetry:cameraOptions:logging:)",
+            "printedName": "init(sessionToken:live:onSuccess:eligibility:messages:messageStyle:autoSwitchActiveColor:autoSwitchInactiveColor:progressBarColor:widgetBackgroundColor:onCancel:onError:onProgress:onEligibilitySuccess:onEligibilityError:backsideSupport:onRetry:cameraOptions:logging:inspectable:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4876,11 +4876,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:17InsuranceCardScan0bC6ConfigV12sessionToken4live9onSuccess11eligibility8messages12messageStyle21autoSwitchActiveColor0no8InactiveQ0011progressBarQ0016widgetBackgroundQ00H6Cancel0H5Error0H8Progress0h11EligibilityI00hzX015backsideSupport0H5Retry13cameraOptions7loggingACSS_SbyAA0aB0VcAA0Z7RequestVSgSDyS2SGSgAA07MessageM0VSgSo7UIColorCSgA7_A7_A7_yycSgyAA0bcX0VcSgySdcSgyAA0Z0VcSgA11_SbSgA8_AA13CameraOptionsVSgAA8LogLevelOSgtcfc",
-            "mangledName": "$s17InsuranceCardScan0bC6ConfigV12sessionToken4live9onSuccess11eligibility8messages12messageStyle21autoSwitchActiveColor0no8InactiveQ0011progressBarQ0016widgetBackgroundQ00H6Cancel0H5Error0H8Progress0h11EligibilityI00hzX015backsideSupport0H5Retry13cameraOptions7loggingACSS_SbyAA0aB0VcAA0Z7RequestVSgSDyS2SGSgAA07MessageM0VSgSo7UIColorCSgA7_A7_A7_yycSgyAA0bcX0VcSgySdcSgyAA0Z0VcSgA11_SbSgA8_AA13CameraOptionsVSgAA8LogLevelOSgtcfc",
+            "usr": "s:17InsuranceCardScan0bC6ConfigV12sessionToken4live9onSuccess11eligibility8messages12messageStyle21autoSwitchActiveColor0no8InactiveQ0011progressBarQ0016widgetBackgroundQ00H6Cancel0H5Error0H8Progress0h11EligibilityI00hzX015backsideSupport0H5Retry13cameraOptions7logging11inspectableACSS_SbyAA0aB0VcAA0Z7RequestVSgSDyS2SGSgAA07MessageM0VSgSo7UIColorCSgA8_A8_A8_yycSgyAA0bcX0VcSgySdcSgyAA0Z0VcSgA12_SbSgA9_AA13CameraOptionsVSgAA8LogLevelOSgA17_tcfc",
+            "mangledName": "$s17InsuranceCardScan0bC6ConfigV12sessionToken4live9onSuccess11eligibility8messages12messageStyle21autoSwitchActiveColor0no8InactiveQ0011progressBarQ0016widgetBackgroundQ00H6Cancel0H5Error0H8Progress0h11EligibilityI00hzX015backsideSupport0H5Retry13cameraOptions7logging11inspectableACSS_SbyAA0aB0VcAA0Z7RequestVSgSDyS2SGSgAA07MessageM0VSgSo7UIColorCSgA8_A8_A8_yycSgyAA0bcX0VcSgySdcSgyAA0Z0VcSgA12_SbSgA9_AA13CameraOptionsVSgAA8LogLevelOSgA17_tcfc",
             "moduleName": "InsuranceCardScan",
             "declAttributes": [
               "AccessControl"
@@ -15726,36 +15741,50 @@
   "ConstValues": [
     {
       "filePath": "\/Users\/nickls\/dev\/cardscan\/swift-package-source\/InsuranceCardScan\/CardScanConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1072,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/nickls\/dev\/cardscan\/swift-package-source\/InsuranceCardScan\/CardScanConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1076,
+      "offset": 1110,
       "length": 7,
       "value": "\"swift\""
     },
     {
       "filePath": "\/Users\/nickls\/dev\/cardscan\/swift-package-source\/InsuranceCardScan\/CardScanConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5726,
+      "offset": 1847,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/nickls\/dev\/cardscan\/swift-package-source\/InsuranceCardScan\/CardScanConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5836,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nickls\/dev\/cardscan\/swift-package-source\/InsuranceCardScan\/CardScanConfig.swift",
       "kind": "Array",
-      "offset": 6386,
+      "offset": 6496,
       "length": 217,
       "value": "[\"manualCaptureTitle\", \"frontsideCompletedTitle\", \"autoCaptureTitle\", \"processingTitle\", \"completedTitle\", \"errorTitle\", \"retryTitle\", \"cameraErrorTitle\", \"eligibilityProcessing\"]"
     },
     {
       "filePath": "\/Users\/nickls\/dev\/cardscan\/swift-package-source\/InsuranceCardScan\/CardScanConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 7145,
+      "offset": 7255,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nickls\/dev\/cardscan\/swift-package-source\/InsuranceCardScan\/CardScanConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 7174,
+      "offset": 7284,
       "length": 5,
       "value": "false"
     },
