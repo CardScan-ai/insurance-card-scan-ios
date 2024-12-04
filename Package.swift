@@ -14,10 +14,6 @@ let package = Package(
             targets: ["InsuranceCardScan"]
         ),
     ],
-    dependencies: [
-        // Adding a new dependency
-        .package(url: "https://github.com/CardScan-ai/api-clients", from: "0.9.3"),
-    ],
     targets: [
         .binaryTarget(
             name: "InsuranceCardScan",
