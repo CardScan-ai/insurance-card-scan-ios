@@ -277,6 +277,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import UIKit;
 @import WebKit;
 #endif
@@ -323,6 +324,19 @@ SWIFT_CLASS("_TtC17InsuranceCardScan22CardScanViewController")
 @interface CardScanViewController (SWIFT_EXTENSION(InsuranceCardScan)) <WKScriptMessageHandler>
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 @end
+
+
+@class NSDate;
+
+SWIFT_CLASS("_TtC17InsuranceCardScan24OpenISO8601DateFormatter")
+@interface OpenISO8601DateFormatter : NSDateFormatter
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (NSDate * _Nullable)dateFromString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 
 
 #endif
