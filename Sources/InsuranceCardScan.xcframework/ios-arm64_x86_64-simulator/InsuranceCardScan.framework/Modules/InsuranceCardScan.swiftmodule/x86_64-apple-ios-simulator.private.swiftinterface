@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
 // swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name InsuranceCardScan
-import AnyCodable
 import Foundation
 @_exported import InsuranceCardScan
 import MobileCoreServices
@@ -797,8 +796,8 @@ public struct CreateCardRequest : Swift.Codable, Swift.Hashable {
   public var enableBacksideScan: Swift.Bool?
   public var enableLivescan: Swift.Bool?
   public var backside: InsuranceCardScan.CreateCardRequestBackside?
-  public var metadata: AnyCodable.AnyCodable?
-  public init(enableBacksideScan: Swift.Bool? = false, enableLivescan: Swift.Bool? = false, backside: InsuranceCardScan.CreateCardRequestBackside? = nil, metadata: AnyCodable.AnyCodable? = nil)
+  public var metadata: InsuranceCardScan.AnyCodable?
+  public init(enableBacksideScan: Swift.Bool? = false, enableLivescan: Swift.Bool? = false, backside: InsuranceCardScan.CreateCardRequestBackside? = nil, metadata: InsuranceCardScan.AnyCodable? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey, Swift.CaseIterable {
     case enableBacksideScan
     case enableLivescan
@@ -1344,6 +1343,57 @@ public struct DirectUpload200ResponseMetadata : Swift.Codable, Swift.Hashable {
   }
   public init(from decoder: any Swift.Decoder) throws
 }
+@frozen public struct AnyCodable : Swift.Codable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+extension InsuranceCardScan.AnyCodable : InsuranceCardScan._AnyEncodable, InsuranceCardScan._AnyDecodable {
+}
+extension InsuranceCardScan.AnyCodable : Swift.Equatable {
+  public static func == (lhs: InsuranceCardScan.AnyCodable, rhs: InsuranceCardScan.AnyCodable) -> Swift.Bool
+}
+extension InsuranceCardScan.AnyCodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension InsuranceCardScan.AnyCodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension InsuranceCardScan.AnyCodable : Swift.ExpressibleByNilLiteral {
+}
+extension InsuranceCardScan.AnyCodable : Swift.ExpressibleByBooleanLiteral {
+  public typealias BooleanLiteralType = Swift.Bool
+}
+extension InsuranceCardScan.AnyCodable : Swift.ExpressibleByIntegerLiteral {
+  public typealias IntegerLiteralType = Swift.Int
+}
+extension InsuranceCardScan.AnyCodable : Swift.ExpressibleByFloatLiteral {
+  public typealias FloatLiteralType = Swift.Double
+}
+extension InsuranceCardScan.AnyCodable : Swift.ExpressibleByStringLiteral {
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+}
+extension InsuranceCardScan.AnyCodable : Swift.ExpressibleByStringInterpolation {
+  public typealias StringInterpolation = Swift.DefaultStringInterpolation
+}
+extension InsuranceCardScan.AnyCodable : Swift.ExpressibleByArrayLiteral {
+  public typealias ArrayLiteralElement = Any
+}
+extension InsuranceCardScan.AnyCodable : Swift.ExpressibleByDictionaryLiteral {
+  public typealias Key = Swift.AnyHashable
+  public typealias Value = Any
+}
+extension InsuranceCardScan.AnyCodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public enum CopayDeductibleService : Swift.String, Swift.Codable, Swift.CaseIterable {
   case officeVisit
   case specialistVisit
@@ -1633,6 +1683,39 @@ public struct ScanMetadataWindowInner : Swift.Codable, Swift.Hashable {
     get
   }
   public init(from decoder: any Swift.Decoder) throws
+}
+@frozen public struct AnyDecodable : Swift.Decodable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+@usableFromInline
+internal protocol _AnyDecodable {
+  var value: Any { get }
+  init<T>(_ value: T?)
+}
+extension InsuranceCardScan.AnyDecodable : InsuranceCardScan._AnyDecodable {
+}
+extension InsuranceCardScan._AnyDecodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension InsuranceCardScan.AnyDecodable : Swift.Equatable {
+  public static func == (lhs: InsuranceCardScan.AnyDecodable, rhs: InsuranceCardScan.AnyDecodable) -> Swift.Bool
+}
+extension InsuranceCardScan.AnyDecodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension InsuranceCardScan.AnyDecodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension InsuranceCardScan.AnyDecodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public struct WebsocketError : Swift.Codable, Swift.Hashable {
   public var message: Swift.String
@@ -2645,8 +2728,8 @@ public struct CardScanError : Swift.Codable, Swift.Error {
 }
 @_hasMissingDesignatedInitializers open class CardScanAPI {
   @discardableResult
-  open class func cardPerformance(cardId: Foundation.UUID, body: AnyCodable.AnyCodable? = nil, apiResponseQueue: Dispatch.DispatchQueue = CardScanClientAPI.apiResponseQueue, completion: @escaping ((_ data: InsuranceCardScan.CardPerformance200Response?, _ error: (any Swift.Error)?) -> Swift.Void)) -> InsuranceCardScan.RequestTask
-  open class func cardPerformanceWithRequestBuilder(cardId: Foundation.UUID, body: AnyCodable.AnyCodable? = nil) -> InsuranceCardScan.RequestBuilder<InsuranceCardScan.CardPerformance200Response>
+  open class func cardPerformance(cardId: Foundation.UUID, body: InsuranceCardScan.AnyCodable? = nil, apiResponseQueue: Dispatch.DispatchQueue = CardScanClientAPI.apiResponseQueue, completion: @escaping ((_ data: InsuranceCardScan.CardPerformance200Response?, _ error: (any Swift.Error)?) -> Swift.Void)) -> InsuranceCardScan.RequestTask
+  open class func cardPerformanceWithRequestBuilder(cardId: Foundation.UUID, body: InsuranceCardScan.AnyCodable? = nil) -> InsuranceCardScan.RequestBuilder<InsuranceCardScan.CardPerformance200Response>
   @discardableResult
   open class func createCard(createCardRequest: InsuranceCardScan.CreateCardRequest? = nil, apiResponseQueue: Dispatch.DispatchQueue = CardScanClientAPI.apiResponseQueue, completion: @escaping ((_ data: InsuranceCardScan.CardApiResponse?, _ error: (any Swift.Error)?) -> Swift.Void)) -> InsuranceCardScan.RequestTask
   open class func createCardWithRequestBuilder(createCardRequest: InsuranceCardScan.CreateCardRequest? = nil) -> InsuranceCardScan.RequestBuilder<InsuranceCardScan.CardApiResponse>
@@ -2687,8 +2770,8 @@ public struct CardScanError : Swift.Codable, Swift.Error {
   open class func searchCards(query: Swift.String, limit: Swift.Int? = nil, cursor: Swift.String? = nil, apiResponseQueue: Dispatch.DispatchQueue = CardScanClientAPI.apiResponseQueue, completion: @escaping ((_ data: InsuranceCardScan.SearchCards200Response?, _ error: (any Swift.Error)?) -> Swift.Void)) -> InsuranceCardScan.RequestTask
   open class func searchCardsWithRequestBuilder(query: Swift.String, limit: Swift.Int? = nil, cursor: Swift.String? = nil) -> InsuranceCardScan.RequestBuilder<InsuranceCardScan.SearchCards200Response>
   @discardableResult
-  open class func setScanMetadata(scanId: Foundation.UUID, body: AnyCodable.AnyCodable? = nil, apiResponseQueue: Dispatch.DispatchQueue = CardScanClientAPI.apiResponseQueue, completion: @escaping ((_ data: Swift.Void?, _ error: (any Swift.Error)?) -> Swift.Void)) -> InsuranceCardScan.RequestTask
-  open class func setScanMetadataWithRequestBuilder(scanId: Foundation.UUID, body: AnyCodable.AnyCodable? = nil) -> InsuranceCardScan.RequestBuilder<Swift.Void>
+  open class func setScanMetadata(scanId: Foundation.UUID, body: InsuranceCardScan.AnyCodable? = nil, apiResponseQueue: Dispatch.DispatchQueue = CardScanClientAPI.apiResponseQueue, completion: @escaping ((_ data: Swift.Void?, _ error: (any Swift.Error)?) -> Swift.Void)) -> InsuranceCardScan.RequestTask
+  open class func setScanMetadataWithRequestBuilder(scanId: Foundation.UUID, body: InsuranceCardScan.AnyCodable? = nil) -> InsuranceCardScan.RequestBuilder<Swift.Void>
   @discardableResult
   open class func validateMagicLink(token: Swift.String, apiResponseQueue: Dispatch.DispatchQueue = CardScanClientAPI.apiResponseQueue, completion: @escaping ((_ data: InsuranceCardScan.ValidateMagicLink200Response?, _ error: (any Swift.Error)?) -> Swift.Void)) -> InsuranceCardScan.RequestTask
   open class func validateMagicLinkWithRequestBuilder(token: Swift.String) -> InsuranceCardScan.RequestBuilder<InsuranceCardScan.ValidateMagicLink200Response>
@@ -2839,11 +2922,11 @@ public struct EligibilityApiResponse : Swift.Codable, Swift.Hashable {
   public var state: InsuranceCardScan.EligibilityApiResponse.State
   public var cardId: Foundation.UUID
   public var eligibilityRequest: InsuranceCardScan.EligibilityApiResponseEligibilityRequest?
-  public var eligibilityResponse: [Swift.String : AnyCodable.AnyCodable]?
+  public var eligibilityResponse: [Swift.String : InsuranceCardScan.AnyCodable]?
   public var eligibilitySummarizedResponse: InsuranceCardScan.EligibilitySummarizedResponse?
   public var error: InsuranceCardScan.ModelError?
   public var createdAt: Foundation.Date
-  public init(eligibilityId: Foundation.UUID, state: InsuranceCardScan.EligibilityApiResponse.State, cardId: Foundation.UUID, eligibilityRequest: InsuranceCardScan.EligibilityApiResponseEligibilityRequest? = nil, eligibilityResponse: [Swift.String : AnyCodable.AnyCodable]? = nil, eligibilitySummarizedResponse: InsuranceCardScan.EligibilitySummarizedResponse? = nil, error: InsuranceCardScan.ModelError? = nil, createdAt: Foundation.Date)
+  public init(eligibilityId: Foundation.UUID, state: InsuranceCardScan.EligibilityApiResponse.State, cardId: Foundation.UUID, eligibilityRequest: InsuranceCardScan.EligibilityApiResponseEligibilityRequest? = nil, eligibilityResponse: [Swift.String : InsuranceCardScan.AnyCodable]? = nil, eligibilitySummarizedResponse: InsuranceCardScan.EligibilitySummarizedResponse? = nil, error: InsuranceCardScan.ModelError? = nil, createdAt: Foundation.Date)
   public enum CodingKeys : Swift.String, Swift.CodingKey, Swift.CaseIterable {
     case eligibilityId
     case state
@@ -2974,6 +3057,75 @@ public struct EligibilityError : Swift.Codable, Swift.Hashable {
     get
   }
   public init(from decoder: any Swift.Decoder) throws
+}
+@frozen public struct AnyEncodable : Swift.Encodable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+@usableFromInline
+internal protocol _AnyEncodable {
+  var value: Any { get }
+  init<T>(_ value: T?)
+}
+extension InsuranceCardScan.AnyEncodable : InsuranceCardScan._AnyEncodable {
+}
+extension InsuranceCardScan._AnyEncodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension InsuranceCardScan.AnyEncodable : Swift.Equatable {
+  public static func == (lhs: InsuranceCardScan.AnyEncodable, rhs: InsuranceCardScan.AnyEncodable) -> Swift.Bool
+}
+extension InsuranceCardScan.AnyEncodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension InsuranceCardScan.AnyEncodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension InsuranceCardScan.AnyEncodable : Swift.ExpressibleByNilLiteral {
+}
+extension InsuranceCardScan.AnyEncodable : Swift.ExpressibleByBooleanLiteral {
+  public typealias BooleanLiteralType = Swift.Bool
+}
+extension InsuranceCardScan.AnyEncodable : Swift.ExpressibleByIntegerLiteral {
+  public typealias IntegerLiteralType = Swift.Int
+}
+extension InsuranceCardScan.AnyEncodable : Swift.ExpressibleByFloatLiteral {
+  public typealias FloatLiteralType = Swift.Double
+}
+extension InsuranceCardScan.AnyEncodable : Swift.ExpressibleByStringLiteral {
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+}
+extension InsuranceCardScan.AnyEncodable : Swift.ExpressibleByStringInterpolation {
+  public typealias StringInterpolation = Swift.DefaultStringInterpolation
+}
+extension InsuranceCardScan.AnyEncodable : Swift.ExpressibleByArrayLiteral {
+  public typealias ArrayLiteralElement = Any
+}
+extension InsuranceCardScan.AnyEncodable : Swift.ExpressibleByDictionaryLiteral {
+  public typealias Key = Swift.AnyHashable
+  public typealias Value = Any
+}
+extension InsuranceCardScan._AnyEncodable {
+  public init(nilLiteral _: ())
+  public init(booleanLiteral value: Swift.Bool)
+  public init(integerLiteral value: Swift.Int)
+  public init(floatLiteral value: Swift.Double)
+  public init(extendedGraphemeClusterLiteral value: Swift.String)
+  public init(stringLiteral value: Swift.String)
+  public init(arrayLiteral elements: Any...)
+  public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
+}
+extension InsuranceCardScan.AnyEncodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public struct PayerDetails : Swift.Codable, Swift.Hashable {
   public var payerName: Swift.String?
