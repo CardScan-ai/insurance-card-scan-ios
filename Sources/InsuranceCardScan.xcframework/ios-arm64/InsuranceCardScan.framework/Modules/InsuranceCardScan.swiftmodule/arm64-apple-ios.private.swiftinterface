@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name InsuranceCardScan
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name InsuranceCardScan
 import Foundation
 @_exported import InsuranceCardScan
 import MobileCoreServices
@@ -1465,7 +1465,14 @@ public struct WebhookEligibilityErrorEvent : Swift.Codable, Swift.Hashable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct CardScanConfig {
-  public init(sessionToken: Swift.String, live: Swift.Bool, onSuccess: @escaping (InsuranceCardScan.InsuranceCard) -> Swift.Void, eligibility: InsuranceCardScan.EligibilityRequest? = nil, messages: [Swift.String : Swift.String]? = nil, messageStyle: InsuranceCardScan.MessageStyle? = nil, autoSwitchActiveColor: UIKit.UIColor? = nil, autoSwitchInactiveColor: UIKit.UIColor? = nil, progressBarColor: UIKit.UIColor? = nil, widgetBackgroundColor: UIKit.UIColor? = nil, onCancel: (() -> Swift.Void)? = nil, onError: ((InsuranceCardScan.CardScanError) -> Swift.Void)? = nil, onProgress: ((Swift.Double) -> Swift.Void)? = nil, onEligibilitySuccess: ((InsuranceCardScan.Eligibility) -> Swift.Void)? = nil, onEligibilityError: ((InsuranceCardScan.CardScanError) -> Swift.Void)? = nil, backsideSupport: Swift.Bool? = nil, onRetry: (() -> Swift.Void)? = nil, cameraOptions: InsuranceCardScan.CameraOptions? = nil, logging: InsuranceCardScan.LogLevel? = nil, inspectable: Swift.Bool? = false)
+  public init(sessionToken: Swift.String, live: Swift.Bool, onSuccess: @escaping (InsuranceCardScan.InsuranceCard) -> Swift.Void, eligibility: InsuranceCardScan.EligibilityRequest? = nil, messages: [Swift.String : Swift.String]? = nil, messageStyle: InsuranceCardScan.MessageStyle? = nil, autoSwitchActiveColor: UIKit.UIColor? = nil, autoSwitchInactiveColor: UIKit.UIColor? = nil, progressBarColor: UIKit.UIColor? = nil, widgetBackgroundColor: UIKit.UIColor? = nil, onCancel: (() -> Swift.Void)? = nil, onError: ((InsuranceCardScan.CardScanError) -> Swift.Void)? = nil, onProgress: ((Swift.Double) -> Swift.Void)? = nil, onEligibilitySuccess: ((InsuranceCardScan.Eligibility) -> Swift.Void)? = nil, onEligibilityError: ((InsuranceCardScan.CardScanError) -> Swift.Void)? = nil, backsideSupport: Swift.Bool? = nil, onRetry: (() -> Swift.Void)? = nil, cameraOptions: InsuranceCardScan.CameraOptions? = nil, logging: InsuranceCardScan.LogLevel? = nil, internalConfig: InsuranceCardScan.InternalConfig? = nil)
+}
+public struct InternalConfig {
+  public init(isInspectable: Swift.Bool = false, useLocalHtml: Swift.Bool = true, redirectToWebcamTest: Swift.Bool = false, initialDelay: InsuranceCardScan.InitialDelay? = nil)
+}
+public struct InitialDelay : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum LogLevel : Swift.String, Swift.Codable {
   case off, normal, verbose, detector, everything
@@ -1478,16 +1485,6 @@ public enum LogLevel : Swift.String, Swift.Codable {
 public let messageKeys: Swift.Set<Swift.String>
 public struct MessageStyle {
   public init(fontSize: Swift.Double, textColor: UIKit.UIColor, backgroundColor: UIKit.UIColor)
-}
-public enum CameraPosition {
-  case front
-  case back
-  case unspecified
-  public static func == (a: InsuranceCardScan.CameraPosition, b: InsuranceCardScan.CameraPosition) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
 }
 public struct CameraOptions : Swift.Codable {
   public init(flipHorizontal: Swift.Bool? = false, flipVertical: Swift.Bool? = false)
@@ -1973,9 +1970,14 @@ public struct ApiErrorResponse : Swift.Codable, Swift.Hashable {
   @_Concurrency.MainActor(unsafe) public var config: InsuranceCardScan.CardScanConfig?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, requestMediaCapturePermissionFor origin: WebKit.WKSecurityOrigin, initiatedByFrame frame: WebKit.WKFrameInfo, type: WebKit.WKMediaCaptureType, decisionHandler: @escaping (WebKit.WKPermissionDecision) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -2395,6 +2397,29 @@ public struct ScanMetadataVideoBackground : Swift.Codable, Swift.Hashable {
     get
   }
   public init(from decoder: any Swift.Decoder) throws
+}
+public class Logger {
+  public enum LogLevel : Swift.Int {
+    case debug
+    case info
+    case warning
+    case error
+    case none
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public static let shared: InsuranceCardScan.Logger
+  public init(source: Swift.String = "CardScan", logLevel: InsuranceCardScan.Logger.LogLevel = .info)
+  public func setLogLevel(_ level: InsuranceCardScan.Logger.LogLevel)
+  public func getLogLevel() -> InsuranceCardScan.Logger.LogLevel
+  public func debug(_ message: Swift.String, context: Swift.String = "", line: Swift.Int = #line)
+  public func info(_ message: Swift.String, context: Swift.String = "", line: Swift.Int = #line)
+  public func warning(_ message: Swift.String, context: Swift.String = "", line: Swift.Int = #line)
+  public func error(_ message: Swift.String, context: Swift.String = "", line: Swift.Int = #line)
+  @objc deinit
 }
 public struct ResponseMetadata : Swift.Codable, Swift.Hashable {
   public var nextCursor: Swift.String?
@@ -4092,8 +4117,6 @@ extension InsuranceCardScan.WebhookEligibilityErrorEvent.CodingKeys : Swift.RawR
 extension InsuranceCardScan.LogLevel : Swift.Equatable {}
 extension InsuranceCardScan.LogLevel : Swift.Hashable {}
 extension InsuranceCardScan.LogLevel : Swift.RawRepresentable {}
-extension InsuranceCardScan.CameraPosition : Swift.Equatable {}
-extension InsuranceCardScan.CameraPosition : Swift.Hashable {}
 extension InsuranceCardScan.DirectUpload200Response.CodingKeys : Swift.Equatable {}
 extension InsuranceCardScan.DirectUpload200Response.CodingKeys : Swift.Hashable {}
 extension InsuranceCardScan.DirectUpload200Response.CodingKeys : Swift.RawRepresentable {}
@@ -4165,6 +4188,9 @@ extension InsuranceCardScan.SubscriberDto.CodingKeys : Swift.RawRepresentable {}
 extension InsuranceCardScan.ScanMetadataVideoBackground.CodingKeys : Swift.Equatable {}
 extension InsuranceCardScan.ScanMetadataVideoBackground.CodingKeys : Swift.Hashable {}
 extension InsuranceCardScan.ScanMetadataVideoBackground.CodingKeys : Swift.RawRepresentable {}
+extension InsuranceCardScan.Logger.LogLevel : Swift.Equatable {}
+extension InsuranceCardScan.Logger.LogLevel : Swift.Hashable {}
+extension InsuranceCardScan.Logger.LogLevel : Swift.RawRepresentable {}
 extension InsuranceCardScan.ResponseMetadata.CodingKeys : Swift.Equatable {}
 extension InsuranceCardScan.ResponseMetadata.CodingKeys : Swift.Hashable {}
 extension InsuranceCardScan.ResponseMetadata.CodingKeys : Swift.RawRepresentable {}
