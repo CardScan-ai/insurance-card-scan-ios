@@ -1,0 +1,112 @@
+# This workflow should be copied to the insurance-card-scan-ios repository
+# It responds to repository dispatch events from the swift-package-source repository
+
+name: Update Swift Package
+
+on:
+  repository_dispatch:
+    types: [new_release]
+
+jobs:
+  update_package:
+    name: Update Package with New Release
+    runs-on: macos-14
+    
+    steps:
+    - name: Checkout Swift Package Repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Configure Git
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        
+    - name: Download and Extract XCFramework
+      run: |
+        VERSION="${{ github.event.client_payload.version }}"
+        DOWNLOAD_URL="${{ github.event.client_payload.download_url }}"
+        
+        echo "Downloading version $VERSION from $DOWNLOAD_URL"
+        
+        # Download the XCFramework zip
+        curl -L -o InsuranceCardScan.xcframework.zip "$DOWNLOAD_URL"
+        
+        # Remove existing XCFramework if it exists
+        rm -rf Sources/InsuranceCardScan.xcframework
+        
+        # Extract new XCFramework
+        unzip InsuranceCardScan.xcframework.zip
+        
+        # Move to Sources directory
+        mkdir -p Sources
+        mv InsuranceCardScan.xcframework Sources/
+        
+        # Cleanup
+        rm InsuranceCardScan.xcframework.zip
+        
+    - name: Update Package.swift (if needed)
+      run: |
+        VERSION="${{ github.event.client_payload.version }}"
+        
+        # Update version in Package.swift if it has a version field
+        if grep -q "version:" Package.swift; then
+          sed -i '' "s/version: \".*\"/version: \"$VERSION\"/" Package.swift
+        fi
+        
+        # You might also want to update any version comments or other references
+        
+    - name: Commit and Tag Changes
+      run: |
+        VERSION="${{ github.event.client_payload.version }}"
+        
+        # Add all changes
+        git add .
+        
+        # Check if there are changes to commit
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+        
+        # Commit changes
+        git commit -m "Update to version $VERSION
+
+        - Updated XCFramework binary
+        - Release triggered from source repository
+        
+        Source: ${{ github.event.client_payload.download_url }}"
+        
+        # Create tag
+        git tag -a "$VERSION" -m "Release $VERSION"
+        
+        # Push changes and tags
+        git push origin main
+        git push origin "$VERSION"
+        
+    - name: Create Release in Package Repository
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.event.client_payload.version }}
+        release_name: "Swift Package ${{ github.event.client_payload.version }}"
+        body: |
+          Updated Swift Package with InsuranceCardScan ${{ github.event.client_payload.version }}
+          
+          ## Installation
+          
+          Add this package to your project using Swift Package Manager:
+          
+          ```swift
+          dependencies: [
+              .package(url: "https://github.com/CardScan-ai/insurance-card-scan-ios", from: "${{ github.event.client_payload.version }}")
+          ]
+          ```
+          
+          ## Source
+          
+          This release corresponds to [InsuranceCardScan ${{ github.event.client_payload.version }}](${{ github.event.client_payload.download_url }})
+        draft: false
+        prerelease: false
