@@ -20,17 +20,17 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         
-    - name: Download and Extract XCFramework
+    - name: Download XCFramework from Release
+      uses: robinraju/release-downloader@v1.11
+      with:
+        repository: CardScan-ai/swift-package-source
+        tag: v${{ github.event.client_payload.version }}
+        fileName: "*.xcframework.zip"
+        token: ${{ secrets.PAT_TOKEN }}
+        
+    - name: Extract and Update XCFramework
       run: |
         VERSION="${{ github.event.client_payload.version }}"
-        
-        echo "Downloading version $VERSION using authenticated script..."
-        
-        # Make download script executable
-        chmod +x scripts/download-xcframework.sh
-        
-        # Download using authenticated script
-        ./scripts/download-xcframework.sh CardScan-ai/swift-package-source "$VERSION" "${{ secrets.GITHUB_TOKEN }}" ./
         
         # Remove existing XCFramework if it exists
         rm -rf Sources/InsuranceCardScan.xcframework
