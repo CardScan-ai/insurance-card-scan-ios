@@ -1464,8 +1464,12 @@ public struct WebhookEligibilityErrorEvent : Swift.Codable, Swift.Hashable {
   }
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct ProgressInfo : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct CardScanConfig {
-  public init(sessionToken: Swift.String, live: Swift.Bool, onSuccess: @escaping (InsuranceCardScan.InsuranceCard) -> Swift.Void, eligibility: InsuranceCardScan.EligibilityRequest? = nil, messages: [Swift.String : Swift.String]? = nil, messageStyle: InsuranceCardScan.MessageStyle? = nil, autoSwitchActiveColor: UIKit.UIColor? = nil, autoSwitchInactiveColor: UIKit.UIColor? = nil, progressBarColor: UIKit.UIColor? = nil, widgetBackgroundColor: UIKit.UIColor? = nil, onCancel: (() -> Swift.Void)? = nil, onError: ((InsuranceCardScan.CardScanError) -> Swift.Void)? = nil, onProgress: ((Swift.Double) -> Swift.Void)? = nil, onEligibilitySuccess: ((InsuranceCardScan.Eligibility) -> Swift.Void)? = nil, onEligibilityError: ((InsuranceCardScan.CardScanError) -> Swift.Void)? = nil, backsideSupport: Swift.Bool? = nil, onRetry: (() -> Swift.Void)? = nil, cameraOptions: InsuranceCardScan.CameraOptions? = nil, logging: InsuranceCardScan.LogLevel? = nil, internalConfig: InsuranceCardScan.InternalConfig? = nil)
+  public init(sessionToken: Swift.String, live: Swift.Bool, onSuccess: @escaping (InsuranceCardScan.InsuranceCard) -> Swift.Void, eligibility: InsuranceCardScan.EligibilityRequest? = nil, messages: [Swift.String : Swift.String]? = nil, messageStyle: InsuranceCardScan.MessageStyle? = nil, autoSwitchActiveColor: UIKit.UIColor? = nil, autoSwitchInactiveColor: UIKit.UIColor? = nil, progressBarColor: UIKit.UIColor? = nil, widgetBackgroundColor: UIKit.UIColor? = nil, onCancel: (() -> Swift.Void)? = nil, onError: ((InsuranceCardScan.CardScanError) -> Swift.Void)? = nil, onProgress: ((InsuranceCardScan.ProgressInfo) -> Swift.Void)? = nil, onScanStart: (() -> Swift.Void)? = nil, onEligibilitySuccess: ((InsuranceCardScan.Eligibility) -> Swift.Void)? = nil, onEligibilityError: ((InsuranceCardScan.CardScanError) -> Swift.Void)? = nil, backsideSupport: Swift.Bool? = nil, onRetry: (() -> Swift.Void)? = nil, cameraOptions: InsuranceCardScan.CameraOptions? = nil, logging: InsuranceCardScan.LogLevel? = nil, internalConfig: InsuranceCardScan.InternalConfig? = nil)
 }
 public struct InternalConfig {
   public init(isInspectable: Swift.Bool = false, useLocalHtml: Swift.Bool = true, redirectToWebcamTest: Swift.Bool = false, initialDelay: InsuranceCardScan.InitialDelay? = nil)
