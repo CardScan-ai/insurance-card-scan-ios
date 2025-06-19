@@ -1,6 +1,3 @@
-# This workflow should be copied to the insurance-card-scan-ios repository
-# It responds to repository dispatch events from the swift-package-source repository
-
 name: Update Swift Package
 
 on:
