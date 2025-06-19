@@ -73,9 +73,7 @@ jobs:
         git commit -m "Update to version $VERSION
 
         - Updated XCFramework binary
-        - Release triggered from source repository
-        
-        Source: ${{ github.event.client_payload.download_url }}"
+        - Release triggered from source repository"
         
         # Create tag
         git tag -a "$VERSION" -m "Release $VERSION"
@@ -104,7 +102,7 @@ jobs:
           
           ## Source
           
-          This release corresponds to [InsuranceCardScan ${{ github.event.client_payload.version }}](${{ github.event.client_payload.download_url }})
+          This release corresponds to InsuranceCardScan ${{ github.event.client_payload.version }}
         draft: false
         prerelease: false
         token: ${{ secrets.GITHUB_TOKEN }}
