@@ -2270,6 +2270,7 @@ public enum CameraError : Swift.Error {
   public func releaseCameraResources()
   public func testCameraAccess(completion: @escaping (Swift.Bool) -> Swift.Void)
   public func validateCameraForWebView() throws
+  public func validateCameraForWebViewAsync(completion: @escaping (Swift.Result<Swift.Void, InsuranceCardScan.CardScanError>) -> Swift.Void)
   @objc deinit
 }
 public struct EligibilityRequest : Swift.Codable {
@@ -2620,6 +2621,7 @@ public enum CardState : Swift.String, Swift.Codable, Swift.CaseIterable {
   case enriched
   case error
   case unknown
+  public init(from decoder: any Swift.Decoder) throws
   public init?(rawValue: Swift.String)
   public typealias AllCases = [InsuranceCardScan.CardState]
   public typealias RawValue = Swift.String

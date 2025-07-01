@@ -18,43 +18,43 @@
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		++J9FRfGee3jLayPU4UuCAV4e6o=
+		YNWQOMPNnwBozdNNDZpIJVnIkGw=
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		d55RcG3AHN2OwsKdlE2xLxEbp9o=
+		meutVBbBiL14IeHotVfIGrr44HY=
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		2npvkE7gLLM0iPYrmp12PAHK+AE=
+		t28oOv1kruis8NgRRN6LDFqJ1+E=
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		d55RcG3AHN2OwsKdlE2xLxEbp9o=
+		meutVBbBiL14IeHotVfIGrr44HY=
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OLyHp9dSiZB44b0QBupPT5Bl+aA=
+		zDcZmwRrznCQ831674b76IvXTRA=
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		++J9FRfGee3jLayPU4UuCAV4e6o=
+		YNWQOMPNnwBozdNNDZpIJVnIkGw=
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		jXfd0dR830sIHmRkpqR6/d+XeEk=
+		/Ed4MFeLcbV9BLacodzmVKWJDz8=
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		T+T6TKRJHD5ZHseEpAacI26D9eA=
+		/GXDZ28LayNa+mT9STqG8E9S0kE=
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jXfd0dR830sIHmRkpqR6/d+XeEk=
+		/Ed4MFeLcbV9BLacodzmVKWJDz8=
 		</data>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YDpCsMIE+kab/+IEbGMQ+XnaWaw=
+		cvUvdzEgV97tQ5MFQw9nh2fDk5w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -129,70 +129,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dPRaSUfIoUetA+cazoicXaXok9QRaPv8RnRr7mTwBoc=
+			YSJ/msrPCkgbs0F7+m/a8gqQWm59Od8IastsBJ0KnkM=
 			</data>
 		</dict>
 		<key>Modules/InsuranceCardScan.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SSaijdozv27PMyd6945B5g2FSZ340LnMabkaQawWLpk=
+			281VMQibrjdPwLTf8j1lc09/oGYY33XGE6Pbwddjd0I=
 			</data>
 		</dict>
 		<key>Modules/InsuranceCardScan.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SCsiL0vwbS1uDzKLqxs5lnVqxCQH7IET9+oCtP2TT5Y=
+			Y505dEaK4KKNHkpUwEoFGrqZtN2CSLklZMYZAFlKy5g=
 			</data>
 		</dict>
 		<key>Modules/InsuranceCardScan.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SSaijdozv27PMyd6945B5g2FSZ340LnMabkaQawWLpk=
+			281VMQibrjdPwLTf8j1lc09/oGYY33XGE6Pbwddjd0I=
 			</data>
 		</dict>
 		<key>Modules/InsuranceCardScan.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s2cJ4lRiDBJJyaTEppKKR7wLMem8CN8QhUarrgPqaFs=
+			X9/YQjkISSYp5KuEeUKq0rpMrqz4wfWlnvPF08VcdH0=
 			</data>
 		</dict>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dPRaSUfIoUetA+cazoicXaXok9QRaPv8RnRr7mTwBoc=
+			YSJ/msrPCkgbs0F7+m/a8gqQWm59Od8IastsBJ0KnkM=
 			</data>
 		</dict>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G1EL4WMy2IG+blURVBXeVXnfPGsk85Me6kt1Pfw6RKM=
+			0sBVtq7cdG2BgkgIhIQCAHi00pclUBNnr9AMWWWjNNw=
 			</data>
 		</dict>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L9Pbf5q1zzjs4nKxixf4bjHLTAKGidlPIlSTzz4pz4M=
+			e8sscBiJC1dOrodve2xOERooHhuhFgTuUeOZzS709Nk=
 			</data>
 		</dict>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G1EL4WMy2IG+blURVBXeVXnfPGsk85Me6kt1Pfw6RKM=
+			0sBVtq7cdG2BgkgIhIQCAHi00pclUBNnr9AMWWWjNNw=
 			</data>
 		</dict>
 		<key>Modules/InsuranceCardScan.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YSXS9AkUYhSxh/b+s/7aWiHDObpd2ON5xpSiLSxIKx4=
+			ENquZb7Acvj+4avUSszA+k+L+Oi227iJTknJ3YIYD5o=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
